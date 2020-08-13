@@ -6,6 +6,189 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A6D729B624E5139700EDBA98 /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D728B924E5139700EDBA98 /* Mnemonic.swift */; };
+		A6D729B824E5139700EDBA98 /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D728BB24E5139700EDBA98 /* PKCS5.swift */; };
+		A6D72A6924E5139700EDBA98 /* Wordlists.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D729B524E5139700EDBA98 /* Wordlists.swift */; };
+		A6D72C5A24E517F000EDBA98 /* VoteChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B6624E517F000EDBA98 /* VoteChain.swift */; };
+		A6D72C5B24E517F000EDBA98 /* VoteArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B6824E517F000EDBA98 /* VoteArgs.swift */; };
+		A6D72C5C24E517F000EDBA98 /* VoteBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B6924E517F000EDBA98 /* VoteBody.swift */; };
+		A6D72C5D24E517F000EDBA98 /* TransferChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B6B24E517F000EDBA98 /* TransferChain.swift */; };
+		A6D72C5E24E517F000EDBA98 /* TransferArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B6D24E517F000EDBA98 /* TransferArgs.swift */; };
+		A6D72C5F24E517F000EDBA98 /* TransferBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B6E24E517F000EDBA98 /* TransferBody.swift */; };
+		A6D72C6024E517F000EDBA98 /* SignedTransactionAbi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7024E517F000EDBA98 /* SignedTransactionAbi.swift */; };
+		A6D72C6124E517F000EDBA98 /* TransactionAuthorizationAbi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7124E517F000EDBA98 /* TransactionAuthorizationAbi.swift */; };
+		A6D72C6224E517F000EDBA98 /* TransactionAbi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7224E517F000EDBA98 /* TransactionAbi.swift */; };
+		A6D72C6324E517F000EDBA98 /* ActionAbi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7324E517F000EDBA98 /* ActionAbi.swift */; };
+		A6D72C6424E517F000EDBA98 /* CommonActionChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7524E517F000EDBA98 /* CommonActionChain.swift */; };
+		A6D72C6524E517F000EDBA98 /* BuyRamChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7724E517F000EDBA98 /* BuyRamChain.swift */; };
+		A6D72C6624E517F000EDBA98 /* BuyRamBytesChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7824E517F000EDBA98 /* BuyRamBytesChain.swift */; };
+		A6D72C6724E517F000EDBA98 /* UnDelegateBandwidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7924E517F000EDBA98 /* UnDelegateBandwidth.swift */; };
+		A6D72C6824E517F000EDBA98 /* CreateAccountChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7A24E517F000EDBA98 /* CreateAccountChain.swift */; };
+		A6D72C6924E517F000EDBA98 /* DelegateBandwidthBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7D24E517F000EDBA98 /* DelegateBandwidthBody.swift */; };
+		A6D72C6A24E517F000EDBA98 /* DelegateBandwidthArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B7E24E517F000EDBA98 /* DelegateBandwidthArgs.swift */; };
+		A6D72C6B24E517F000EDBA98 /* NewAccountBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8024E517F000EDBA98 /* NewAccountBody.swift */; };
+		A6D72C6C24E517F000EDBA98 /* AccountRequiredAuthAbi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8124E517F000EDBA98 /* AccountRequiredAuthAbi.swift */; };
+		A6D72C6D24E517F000EDBA98 /* AccountKeyAbi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8224E517F000EDBA98 /* AccountKeyAbi.swift */; };
+		A6D72C6E24E517F000EDBA98 /* NewAccountArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8324E517F000EDBA98 /* NewAccountArgs.swift */; };
+		A6D72C6F24E517F000EDBA98 /* BuyRamBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8524E517F000EDBA98 /* BuyRamBody.swift */; };
+		A6D72C7024E517F000EDBA98 /* BuyRamBytesBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8624E517F000EDBA98 /* BuyRamBytesBody.swift */; };
+		A6D72C7124E517F000EDBA98 /* BuyRamBytesArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8724E517F000EDBA98 /* BuyRamBytesArgs.swift */; };
+		A6D72C7224E517F000EDBA98 /* BuyRamArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8824E517F000EDBA98 /* BuyRamArgs.swift */; };
+		A6D72C7324E517F000EDBA98 /* SellRamArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8A24E517F000EDBA98 /* SellRamArgs.swift */; };
+		A6D72C7424E517F000EDBA98 /* SellRamBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8B24E517F000EDBA98 /* SellRamBody.swift */; };
+		A6D72C7524E517F000EDBA98 /* UnDelegateBandwidthBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8D24E517F000EDBA98 /* UnDelegateBandwidthBody.swift */; };
+		A6D72C7624E517F000EDBA98 /* UnDelegateBandwidthArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B8E24E517F000EDBA98 /* UnDelegateBandwidthArgs.swift */; };
+		A6D72C7724E517F000EDBA98 /* RefundBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9024E517F000EDBA98 /* RefundBody.swift */; };
+		A6D72C7824E517F000EDBA98 /* RefundArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9124E517F000EDBA98 /* RefundArgs.swift */; };
+		A6D72C7924E517F000EDBA98 /* RefundChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9224E517F000EDBA98 /* RefundChain.swift */; };
+		A6D72C7A24E517F000EDBA98 /* SellRamChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9324E517F000EDBA98 /* SellRamChain.swift */; };
+		A6D72C7B24E517F000EDBA98 /* DelegateBandwidthChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9424E517F000EDBA98 /* DelegateBandwidthChain.swift */; };
+		A6D72C7C24E517F000EDBA98 /* TransactionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9524E517F000EDBA98 /* TransactionContext.swift */; };
+		A6D72C7D24E517F000EDBA98 /* ChainTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9624E517F000EDBA98 /* ChainTransaction.swift */; };
+		A6D72C7E24E517F000EDBA98 /* ChainResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9724E517F000EDBA98 /* ChainResponse.swift */; };
+		A6D72C7F24E517F000EDBA98 /* GetDelegatedBandwidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9A24E517F000EDBA98 /* GetDelegatedBandwidth.swift */; };
+		A6D72C8024E517F000EDBA98 /* BandwidthJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9B24E517F000EDBA98 /* BandwidthJson.swift */; };
+		A6D72C8124E517F000EDBA98 /* BpBranding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9E24E517F000EDBA98 /* BpBranding.swift */; };
+		A6D72C8224E517F000EDBA98 /* BpNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72B9F24E517F000EDBA98 /* BpNode.swift */; };
+		A6D72C8324E517F000EDBA98 /* BpSocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BA024E517F000EDBA98 /* BpSocial.swift */; };
+		A6D72C8424E517F000EDBA98 /* BpLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BA124E517F000EDBA98 /* BpLocation.swift */; };
+		A6D72C8524E517F000EDBA98 /* BpOrg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BA224E517F000EDBA98 /* BpOrg.swift */; };
+		A6D72C8624E517F000EDBA98 /* BpParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BA324E517F000EDBA98 /* BpParent.swift */; };
+		A6D72C8724E517F000EDBA98 /* GetBlockProducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BA424E517F000EDBA98 /* GetBlockProducers.swift */; };
+		A6D72C8824E517F000EDBA98 /* BlockProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BA524E517F000EDBA98 /* BlockProducer.swift */; };
+		A6D72C8924E517F000EDBA98 /* GetRegProxyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BA724E517F000EDBA98 /* GetRegProxyInfo.swift */; };
+		A6D72C8A24E517F000EDBA98 /* ProxyJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BA824E517F000EDBA98 /* ProxyJson.swift */; };
+		A6D72C8B24E517F000EDBA98 /* GetRamPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BAA24E517F000EDBA98 /* GetRamPrice.swift */; };
+		A6D72C8C24E517F000EDBA98 /* CheckAccountNameExists.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BAC24E517F000EDBA98 /* CheckAccountNameExists.swift */; };
+		A6D72C8D24E517F000EDBA98 /* AssetWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BAF24E517F000EDBA98 /* AssetWriter.swift */; };
+		A6D72C8E24E517F000EDBA98 /* DataWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BB024E517F000EDBA98 /* DataWriter.swift */; };
+		A6D72C8F24E517F000EDBA98 /* HexCollectionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BB124E517F000EDBA98 /* HexCollectionWriter.swift */; };
+		A6D72C9024E517F000EDBA98 /* AbiTypeWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BB224E517F000EDBA98 /* AbiTypeWriter.swift */; };
+		A6D72C9124E517F000EDBA98 /* StringCollectionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BB324E517F000EDBA98 /* StringCollectionWriter.swift */; };
+		A6D72C9224E517F000EDBA98 /* PublicKeyWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BB424E517F000EDBA98 /* PublicKeyWriter.swift */; };
+		A6D72C9324E517F000EDBA98 /* TimestampWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BB524E517F000EDBA98 /* TimestampWriter.swift */; };
+		A6D72C9424E517F000EDBA98 /* AccountNameWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BB624E517F000EDBA98 /* AccountNameWriter.swift */; };
+		A6D72C9524E517F000EDBA98 /* AccountNameCollectionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BB724E517F000EDBA98 /* AccountNameCollectionWriter.swift */; };
+		A6D72C9624E517F000EDBA98 /* NameWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BB824E517F000EDBA98 /* NameWriter.swift */; };
+		A6D72C9724E517F000EDBA98 /* BlockNumWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BB924E517F000EDBA98 /* BlockNumWriter.swift */; };
+		A6D72C9824E517F000EDBA98 /* ActionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BBA24E517F000EDBA98 /* ActionWriter.swift */; };
+		A6D72C9924E517F000EDBA98 /* BlockPrefixWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BBB24E517F000EDBA98 /* BlockPrefixWriter.swift */; };
+		A6D72C9A24E517F000EDBA98 /* AccountActionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BBC24E517F000EDBA98 /* AccountActionWriter.swift */; };
+		A6D72C9B24E517F000EDBA98 /* ChainIdWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BBD24E517F000EDBA98 /* ChainIdWriter.swift */; };
+		A6D72C9C24E517F000EDBA98 /* AbiEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BBE24E517F000EDBA98 /* AbiEncoder.swift */; };
+		A6D72C9D24E517F000EDBA98 /* AbiEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BBF24E517F000EDBA98 /* AbiEncodingContainer.swift */; };
+		A6D72C9E24E517F000EDBA98 /* regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BC024E517F000EDBA98 /* regex.swift */; };
+		A6D72C9F24E517F000EDBA98 /* PrivateKeySigning.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BC424E517F000EDBA98 /* PrivateKeySigning.swift */; };
+		A6D72CA024E517F000EDBA98 /* EOSPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BC524E517F000EDBA98 /* EOSPublicKey.swift */; };
+		A6D72CA124E517F000EDBA98 /* ECPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BC624E517F000EDBA98 /* ECPublicKey.swift */; };
+		A6D72CA224E517F000EDBA98 /* EOSPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BC724E517F000EDBA98 /* EOSPrivateKey.swift */; };
+		A6D72CA324E517F000EDBA98 /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BC824E517F000EDBA98 /* ECPrivateKey.swift */; };
+		A6D72CA424E517F000EDBA98 /* HexWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BCA24E517F000EDBA98 /* HexWriter.swift */; };
+		A6D72CA524E517F000EDBA98 /* Sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BCC24E517F000EDBA98 /* Sha256.swift */; };
+		A6D72CA624E517F000EDBA98 /* RIPEMD160-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BCD24E517F000EDBA98 /* RIPEMD160-Ext.swift */; };
+		A6D72CA724E517F000EDBA98 /* RIPEMD160.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BCE24E517F000EDBA98 /* RIPEMD160.swift */; };
+		A6D72CA824E517F000EDBA98 /* RIPEMD160-HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BCF24E517F000EDBA98 /* RIPEMD160-HMAC.swift */; };
+		A6D72CA924E517F000EDBA98 /* Base58String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BD124E517F000EDBA98 /* Base58String.swift */; };
+		A6D72CAA24E517F000EDBA98 /* Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BD224E517F000EDBA98 /* Base58.swift */; };
+		A6D72CAB24E517F000EDBA98 /* Pretty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BD424E517F000EDBA98 /* Pretty.swift */; };
+		A6D72CAC24E517F000EDBA98 /* BlockIdDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BD624E517F000EDBA98 /* BlockIdDetails.swift */; };
+		A6D72CAD24E517F000EDBA98 /* uECC.c in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BE424E517F000EDBA98 /* uECC.c */; };
+		A6D72CAE24E517F000EDBA98 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BE824E517F000EDBA98 /* Connection.swift */; };
+		A6D72CAF24E517F000EDBA98 /* RxHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BE924E517F000EDBA98 /* RxHttp.swift */; };
+		A6D72CB024E517F000EDBA98 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BEA24E517F000EDBA98 /* Logger.swift */; };
+		A6D72CB124E517F000EDBA98 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BEB24E517F000EDBA98 /* HttpRequest.swift */; };
+		A6D72CB224E517F000EDBA98 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BEC24E517F000EDBA98 /* HttpResponse.swift */; };
+		A6D72CB324E517F000EDBA98 /* HttpErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BED24E517F000EDBA98 /* HttpErrorResponse.swift */; };
+		A6D72CB424E517F000EDBA98 /* DateDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BEF24E517F000EDBA98 /* DateDecoder.swift */; };
+		A6D72CB524E517F000EDBA98 /* HistoryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BF024E517F000EDBA98 /* HistoryApi.swift */; };
+		A6D72CB624E517F000EDBA98 /* ChainApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BF124E517F000EDBA98 /* ChainApi.swift */; };
+		A6D72CB724E517F000EDBA98 /* TransactionAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BF424E517F000EDBA98 /* TransactionAuthorization.swift */; };
+		A6D72CB824E517F000EDBA98 /* TransactionActionTrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BF624E517F000EDBA98 /* TransactionActionTrace.swift */; };
+		A6D72CB924E517F000EDBA98 /* TransactionProcessed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BF724E517F000EDBA98 /* TransactionProcessed.swift */; };
+		A6D72CBA24E517F000EDBA98 /* TransactionComitted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BF824E517F000EDBA98 /* TransactionComitted.swift */; };
+		A6D72CBB24E517F000EDBA98 /* TransactionParentReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BF924E517F000EDBA98 /* TransactionParentReceipt.swift */; };
+		A6D72CBC24E517F000EDBA98 /* TransactionAct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BFA24E517F000EDBA98 /* TransactionAct.swift */; };
+		A6D72CBD24E517F000EDBA98 /* TransactionActAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BFB24E517F000EDBA98 /* TransactionActAuthorization.swift */; };
+		A6D72CBE24E517F000EDBA98 /* TransactionReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BFC24E517F000EDBA98 /* TransactionReceipt.swift */; };
+		A6D72CBF24E517F000EDBA98 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BFE24E517F000EDBA98 /* Transaction.swift */; };
+		A6D72CC024E517F000EDBA98 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72BFF24E517F000EDBA98 /* Action.swift */; };
+		A6D72CC124E517F000EDBA98 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0224E517F000EDBA98 /* Producer.swift */; };
+		A6D72CC224E517F000EDBA98 /* ProducerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0324E517F000EDBA98 /* ProducerList.swift */; };
+		A6D72CC324E517F000EDBA98 /* GetProducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0524E517F000EDBA98 /* GetProducers.swift */; };
+		A6D72CC424E517F000EDBA98 /* AbiStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0824E517F000EDBA98 /* AbiStruct.swift */; };
+		A6D72CC524E517F000EDBA98 /* AbiBinargs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0924E517F000EDBA98 /* AbiBinargs.swift */; };
+		A6D72CC624E517F000EDBA98 /* AbiAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0A24E517F000EDBA98 /* AbiAction.swift */; };
+		A6D72CC724E517F000EDBA98 /* AbiContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0B24E517F000EDBA98 /* AbiContract.swift */; };
+		A6D72CC824E517F000EDBA98 /* AbiType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0C24E517F000EDBA98 /* AbiType.swift */; };
+		A6D72CC924E517F000EDBA98 /* RawCodeForAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0D24E517F000EDBA98 /* RawCodeForAccount.swift */; };
+		A6D72CCA24E517F000EDBA98 /* CodeForAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0E24E517F000EDBA98 /* CodeForAccount.swift */; };
+		A6D72CCB24E517F000EDBA98 /* AbiForAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C0F24E517F000EDBA98 /* AbiForAccount.swift */; };
+		A6D72CCC24E517F000EDBA98 /* BinaryHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1024E517F000EDBA98 /* BinaryHex.swift */; };
+		A6D72CCD24E517F000EDBA98 /* ContractTableRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1124E517F000EDBA98 /* ContractTableRows.swift */; };
+		A6D72CCE24E517F000EDBA98 /* AbiField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1224E517F000EDBA98 /* AbiField.swift */; };
+		A6D72CCF24E517F000EDBA98 /* AbiTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1324E517F000EDBA98 /* AbiTable.swift */; };
+		A6D72CD024E517F000EDBA98 /* GetCodeByAccountName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1524E517F000EDBA98 /* GetCodeByAccountName.swift */; };
+		A6D72CD124E517F000EDBA98 /* GetCurrencyBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1624E517F000EDBA98 /* GetCurrencyBalance.swift */; };
+		A6D72CD224E517F000EDBA98 /* AbiJsonToBin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1724E517F000EDBA98 /* AbiJsonToBin.swift */; };
+		A6D72CD324E517F000EDBA98 /* GetCurrencyStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1824E517F000EDBA98 /* GetCurrencyStats.swift */; };
+		A6D72CD424E517F000EDBA98 /* AbiBinToJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1924E517F000EDBA98 /* AbiBinToJson.swift */; };
+		A6D72CD524E517F000EDBA98 /* GetTableRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1A24E517F000EDBA98 /* GetTableRows.swift */; };
+		A6D72CD624E517F000EDBA98 /* ChainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1B24E517F000EDBA98 /* ChainError.swift */; };
+		A6D72CD724E517F000EDBA98 /* GetRequiredKeysBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1D24E517F000EDBA98 /* GetRequiredKeysBody.swift */; };
+		A6D72CD824E517F000EDBA98 /* PushTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1E24E517F000EDBA98 /* PushTransaction.swift */; };
+		A6D72CD924E517F000EDBA98 /* RequiredKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C1F24E517F000EDBA98 /* RequiredKeys.swift */; };
+		A6D72CDA24E517F000EDBA98 /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2024E517F000EDBA98 /* ResponseBody.swift */; };
+		A6D72CDB24E517F000EDBA98 /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2124E517F000EDBA98 /* RequestBody.swift */; };
+		A6D72CDC24E517F000EDBA98 /* parsing_types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2224E517F000EDBA98 /* parsing_types.swift */; };
+		A6D72CDD24E517F000EDBA98 /* codable_type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2324E517F000EDBA98 /* codable_type.swift */; };
+		A6D72CDE24E517F000EDBA98 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2424E517F000EDBA98 /* Encodable.swift */; };
+		A6D72CDF24E517F000EDBA98 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2624E517F000EDBA98 /* Info.swift */; };
+		A6D72CE024E517F000EDBA98 /* HistoricAccountAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2924E517F000EDBA98 /* HistoricAccountAction.swift */; };
+		A6D72CE124E517F000EDBA98 /* ExecutedTransactionParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2A24E517F000EDBA98 /* ExecutedTransactionParent.swift */; };
+		A6D72CE224E517F000EDBA98 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2B24E517F000EDBA98 /* Accounts.swift */; };
+		A6D72CE324E517F000EDBA98 /* ExecutedTransactionReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2C24E517F000EDBA98 /* ExecutedTransactionReceipt.swift */; };
+		A6D72CE424E517F000EDBA98 /* ExecutedTransactionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2D24E517F000EDBA98 /* ExecutedTransactionAction.swift */; };
+		A6D72CE524E517F000EDBA98 /* HistoricAccountActionParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2E24E517F000EDBA98 /* HistoricAccountActionParent.swift */; };
+		A6D72CE624E517F000EDBA98 /* ExecutedTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C2F24E517F000EDBA98 /* ExecutedTransaction.swift */; };
+		A6D72CE724E517F000EDBA98 /* HistoricTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3024E517F000EDBA98 /* HistoricTransaction.swift */; };
+		A6D72CE824E517F000EDBA98 /* GetActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3224E517F000EDBA98 /* GetActions.swift */; };
+		A6D72CE924E517F000EDBA98 /* GetKeyAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3324E517F000EDBA98 /* GetKeyAccounts.swift */; };
+		A6D72CEA24E517F000EDBA98 /* GetTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3424E517F000EDBA98 /* GetTransaction.swift */; };
+		A6D72CEB24E517F000EDBA98 /* GetControlledAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3524E517F000EDBA98 /* GetControlledAccounts.swift */; };
+		A6D72CEC24E517F000EDBA98 /* SelfDelegatedBandwidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3824E517F000EDBA98 /* SelfDelegatedBandwidth.swift */; };
+		A6D72CED24E517F000EDBA98 /* AccountPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3924E517F000EDBA98 /* AccountPermission.swift */; };
+		A6D72CEE24E517F000EDBA98 /* AccountKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3A24E517F000EDBA98 /* AccountKey.swift */; };
+		A6D72CEF24E517F000EDBA98 /* AccountRequiredAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3B24E517F000EDBA98 /* AccountRequiredAuth.swift */; };
+		A6D72CF024E517F000EDBA98 /* RefundRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3C24E517F000EDBA98 /* RefundRequest.swift */; };
+		A6D72CF124E517F000EDBA98 /* AccountAuthPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3D24E517F000EDBA98 /* AccountAuthPermission.swift */; };
+		A6D72CF224E517F000EDBA98 /* ChainResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3E24E517F000EDBA98 /* ChainResource.swift */; };
+		A6D72CF324E517F000EDBA98 /* VoterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C3F24E517F000EDBA98 /* VoterInfo.swift */; };
+		A6D72CF424E517F000EDBA98 /* AccountAuthWait.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4024E517F000EDBA98 /* AccountAuthWait.swift */; };
+		A6D72CF524E517F000EDBA98 /* AccountResourceLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4124E517F000EDBA98 /* AccountResourceLimit.swift */; };
+		A6D72CF624E517F000EDBA98 /* TotalResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4224E517F000EDBA98 /* TotalResources.swift */; };
+		A6D72CF724E517F000EDBA98 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4324E517F000EDBA98 /* Account.swift */; };
+		A6D72CF824E517F000EDBA98 /* TransferFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4424E517F000EDBA98 /* TransferFee.swift */; };
+		A6D72CF924E517F000EDBA98 /* AccountAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4524E517F000EDBA98 /* AccountAuth.swift */; };
+		A6D72CFA24E517F000EDBA98 /* AccountName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4724E517F000EDBA98 /* AccountName.swift */; };
+		A6D72CFB24E517F000EDBA98 /* BlockHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4824E517F000EDBA98 /* BlockHeight.swift */; };
+		A6D72CFC24E517F000EDBA98 /* ChainErrorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4924E517F000EDBA98 /* ChainErrorDetail.swift */; };
+		A6D72CFD24E517F000EDBA98 /* ChainErrorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4A24E517F000EDBA98 /* ChainErrorItem.swift */; };
+		A6D72CFE24E517F000EDBA98 /* BlockHeaderRootMerkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4D24E517F000EDBA98 /* BlockHeaderRootMerkle.swift */; };
+		A6D72CFF24E517F000EDBA98 /* CycleSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4E24E517F000EDBA98 /* CycleSummary.swift */; };
+		A6D72D0024E517F000EDBA98 /* BlockHeaderSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C4F24E517F000EDBA98 /* BlockHeaderSchedule.swift */; };
+		A6D72D0124E517F000EDBA98 /* BlockHeaderStateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C5024E517F000EDBA98 /* BlockHeaderStateHeader.swift */; };
+		A6D72D0224E517F000EDBA98 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C5124E517F000EDBA98 /* Block.swift */; };
+		A6D72D0324E517F000EDBA98 /* CycleSummaryTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C5224E517F000EDBA98 /* CycleSummaryTransaction.swift */; };
+		A6D72D0424E517F000EDBA98 /* BlockHeaderProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C5324E517F000EDBA98 /* BlockHeaderProducer.swift */; };
+		A6D72D0524E517F000EDBA98 /* BlockHeaderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C5424E517F000EDBA98 /* BlockHeaderState.swift */; };
+		A6D72D0624E517F000EDBA98 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C5524E517F000EDBA98 /* Region.swift */; };
+		A6D72D0724E517F000EDBA98 /* BlockNumOrId.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C5724E517F000EDBA98 /* BlockNumOrId.swift */; };
+		A6D72D0824E517F000EDBA98 /* primitive_type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72C5824E517F000EDBA98 /* primitive_type.swift */; };
+		A6D72D0B24E51DA000EDBA98 /* UltrainSdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D72D0924E51DA000EDBA98 /* UltrainSdk.swift */; };
+		A6D72D0C24E51DA000EDBA98 /* UltrainSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D72D0A24E51DA000EDBA98 /* UltrainSdk.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +203,200 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libUltrainSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUltrainSdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D728B724E5139600EDBA98 /* UltrainSdk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UltrainSdk-Bridging-Header.h"; sourceTree = "<group>"; };
+		A6D728B924E5139700EDBA98 /* Mnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
+		A6D728BB24E5139700EDBA98 /* PKCS5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCS5.swift; sourceTree = "<group>"; };
+		A6D729B524E5139700EDBA98 /* Wordlists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wordlists.swift; sourceTree = "<group>"; };
+		A6D72B6624E517F000EDBA98 /* VoteChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteChain.swift; sourceTree = "<group>"; };
+		A6D72B6824E517F000EDBA98 /* VoteArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteArgs.swift; sourceTree = "<group>"; };
+		A6D72B6924E517F000EDBA98 /* VoteBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteBody.swift; sourceTree = "<group>"; };
+		A6D72B6B24E517F000EDBA98 /* TransferChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferChain.swift; sourceTree = "<group>"; };
+		A6D72B6D24E517F000EDBA98 /* TransferArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferArgs.swift; sourceTree = "<group>"; };
+		A6D72B6E24E517F000EDBA98 /* TransferBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferBody.swift; sourceTree = "<group>"; };
+		A6D72B7024E517F000EDBA98 /* SignedTransactionAbi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedTransactionAbi.swift; sourceTree = "<group>"; };
+		A6D72B7124E517F000EDBA98 /* TransactionAuthorizationAbi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionAuthorizationAbi.swift; sourceTree = "<group>"; };
+		A6D72B7224E517F000EDBA98 /* TransactionAbi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionAbi.swift; sourceTree = "<group>"; };
+		A6D72B7324E517F000EDBA98 /* ActionAbi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionAbi.swift; sourceTree = "<group>"; };
+		A6D72B7524E517F000EDBA98 /* CommonActionChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonActionChain.swift; sourceTree = "<group>"; };
+		A6D72B7724E517F000EDBA98 /* BuyRamChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyRamChain.swift; sourceTree = "<group>"; };
+		A6D72B7824E517F000EDBA98 /* BuyRamBytesChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyRamBytesChain.swift; sourceTree = "<group>"; };
+		A6D72B7924E517F000EDBA98 /* UnDelegateBandwidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnDelegateBandwidth.swift; sourceTree = "<group>"; };
+		A6D72B7A24E517F000EDBA98 /* CreateAccountChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountChain.swift; sourceTree = "<group>"; };
+		A6D72B7D24E517F000EDBA98 /* DelegateBandwidthBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateBandwidthBody.swift; sourceTree = "<group>"; };
+		A6D72B7E24E517F000EDBA98 /* DelegateBandwidthArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateBandwidthArgs.swift; sourceTree = "<group>"; };
+		A6D72B8024E517F000EDBA98 /* NewAccountBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountBody.swift; sourceTree = "<group>"; };
+		A6D72B8124E517F000EDBA98 /* AccountRequiredAuthAbi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRequiredAuthAbi.swift; sourceTree = "<group>"; };
+		A6D72B8224E517F000EDBA98 /* AccountKeyAbi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountKeyAbi.swift; sourceTree = "<group>"; };
+		A6D72B8324E517F000EDBA98 /* NewAccountArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountArgs.swift; sourceTree = "<group>"; };
+		A6D72B8524E517F000EDBA98 /* BuyRamBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyRamBody.swift; sourceTree = "<group>"; };
+		A6D72B8624E517F000EDBA98 /* BuyRamBytesBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyRamBytesBody.swift; sourceTree = "<group>"; };
+		A6D72B8724E517F000EDBA98 /* BuyRamBytesArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyRamBytesArgs.swift; sourceTree = "<group>"; };
+		A6D72B8824E517F000EDBA98 /* BuyRamArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyRamArgs.swift; sourceTree = "<group>"; };
+		A6D72B8A24E517F000EDBA98 /* SellRamArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellRamArgs.swift; sourceTree = "<group>"; };
+		A6D72B8B24E517F000EDBA98 /* SellRamBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellRamBody.swift; sourceTree = "<group>"; };
+		A6D72B8D24E517F000EDBA98 /* UnDelegateBandwidthBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnDelegateBandwidthBody.swift; sourceTree = "<group>"; };
+		A6D72B8E24E517F000EDBA98 /* UnDelegateBandwidthArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnDelegateBandwidthArgs.swift; sourceTree = "<group>"; };
+		A6D72B9024E517F000EDBA98 /* RefundBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundBody.swift; sourceTree = "<group>"; };
+		A6D72B9124E517F000EDBA98 /* RefundArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundArgs.swift; sourceTree = "<group>"; };
+		A6D72B9224E517F000EDBA98 /* RefundChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundChain.swift; sourceTree = "<group>"; };
+		A6D72B9324E517F000EDBA98 /* SellRamChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellRamChain.swift; sourceTree = "<group>"; };
+		A6D72B9424E517F000EDBA98 /* DelegateBandwidthChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateBandwidthChain.swift; sourceTree = "<group>"; };
+		A6D72B9524E517F000EDBA98 /* TransactionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionContext.swift; sourceTree = "<group>"; };
+		A6D72B9624E517F000EDBA98 /* ChainTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainTransaction.swift; sourceTree = "<group>"; };
+		A6D72B9724E517F000EDBA98 /* ChainResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainResponse.swift; sourceTree = "<group>"; };
+		A6D72B9A24E517F000EDBA98 /* GetDelegatedBandwidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDelegatedBandwidth.swift; sourceTree = "<group>"; };
+		A6D72B9B24E517F000EDBA98 /* BandwidthJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandwidthJson.swift; sourceTree = "<group>"; };
+		A6D72B9E24E517F000EDBA98 /* BpBranding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BpBranding.swift; sourceTree = "<group>"; };
+		A6D72B9F24E517F000EDBA98 /* BpNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BpNode.swift; sourceTree = "<group>"; };
+		A6D72BA024E517F000EDBA98 /* BpSocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BpSocial.swift; sourceTree = "<group>"; };
+		A6D72BA124E517F000EDBA98 /* BpLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BpLocation.swift; sourceTree = "<group>"; };
+		A6D72BA224E517F000EDBA98 /* BpOrg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BpOrg.swift; sourceTree = "<group>"; };
+		A6D72BA324E517F000EDBA98 /* BpParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BpParent.swift; sourceTree = "<group>"; };
+		A6D72BA424E517F000EDBA98 /* GetBlockProducers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBlockProducers.swift; sourceTree = "<group>"; };
+		A6D72BA524E517F000EDBA98 /* BlockProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockProducer.swift; sourceTree = "<group>"; };
+		A6D72BA724E517F000EDBA98 /* GetRegProxyInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRegProxyInfo.swift; sourceTree = "<group>"; };
+		A6D72BA824E517F000EDBA98 /* ProxyJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyJson.swift; sourceTree = "<group>"; };
+		A6D72BAA24E517F000EDBA98 /* GetRamPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRamPrice.swift; sourceTree = "<group>"; };
+		A6D72BAC24E517F000EDBA98 /* CheckAccountNameExists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckAccountNameExists.swift; sourceTree = "<group>"; };
+		A6D72BAF24E517F000EDBA98 /* AssetWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetWriter.swift; sourceTree = "<group>"; };
+		A6D72BB024E517F000EDBA98 /* DataWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataWriter.swift; sourceTree = "<group>"; };
+		A6D72BB124E517F000EDBA98 /* HexCollectionWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexCollectionWriter.swift; sourceTree = "<group>"; };
+		A6D72BB224E517F000EDBA98 /* AbiTypeWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiTypeWriter.swift; sourceTree = "<group>"; };
+		A6D72BB324E517F000EDBA98 /* StringCollectionWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCollectionWriter.swift; sourceTree = "<group>"; };
+		A6D72BB424E517F000EDBA98 /* PublicKeyWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKeyWriter.swift; sourceTree = "<group>"; };
+		A6D72BB524E517F000EDBA98 /* TimestampWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimestampWriter.swift; sourceTree = "<group>"; };
+		A6D72BB624E517F000EDBA98 /* AccountNameWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountNameWriter.swift; sourceTree = "<group>"; };
+		A6D72BB724E517F000EDBA98 /* AccountNameCollectionWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountNameCollectionWriter.swift; sourceTree = "<group>"; };
+		A6D72BB824E517F000EDBA98 /* NameWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameWriter.swift; sourceTree = "<group>"; };
+		A6D72BB924E517F000EDBA98 /* BlockNumWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockNumWriter.swift; sourceTree = "<group>"; };
+		A6D72BBA24E517F000EDBA98 /* ActionWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionWriter.swift; sourceTree = "<group>"; };
+		A6D72BBB24E517F000EDBA98 /* BlockPrefixWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockPrefixWriter.swift; sourceTree = "<group>"; };
+		A6D72BBC24E517F000EDBA98 /* AccountActionWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountActionWriter.swift; sourceTree = "<group>"; };
+		A6D72BBD24E517F000EDBA98 /* ChainIdWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainIdWriter.swift; sourceTree = "<group>"; };
+		A6D72BBE24E517F000EDBA98 /* AbiEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiEncoder.swift; sourceTree = "<group>"; };
+		A6D72BBF24E517F000EDBA98 /* AbiEncodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiEncodingContainer.swift; sourceTree = "<group>"; };
+		A6D72BC024E517F000EDBA98 /* regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = regex.swift; sourceTree = "<group>"; };
+		A6D72BC424E517F000EDBA98 /* PrivateKeySigning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKeySigning.swift; sourceTree = "<group>"; };
+		A6D72BC524E517F000EDBA98 /* EOSPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EOSPublicKey.swift; sourceTree = "<group>"; };
+		A6D72BC624E517F000EDBA98 /* ECPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPublicKey.swift; sourceTree = "<group>"; };
+		A6D72BC724E517F000EDBA98 /* EOSPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EOSPrivateKey.swift; sourceTree = "<group>"; };
+		A6D72BC824E517F000EDBA98 /* ECPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPrivateKey.swift; sourceTree = "<group>"; };
+		A6D72BCA24E517F000EDBA98 /* HexWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexWriter.swift; sourceTree = "<group>"; };
+		A6D72BCC24E517F000EDBA98 /* Sha256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sha256.swift; sourceTree = "<group>"; };
+		A6D72BCD24E517F000EDBA98 /* RIPEMD160-Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RIPEMD160-Ext.swift"; sourceTree = "<group>"; };
+		A6D72BCE24E517F000EDBA98 /* RIPEMD160.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RIPEMD160.swift; sourceTree = "<group>"; };
+		A6D72BCF24E517F000EDBA98 /* RIPEMD160-HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RIPEMD160-HMAC.swift"; sourceTree = "<group>"; };
+		A6D72BD124E517F000EDBA98 /* Base58String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58String.swift; sourceTree = "<group>"; };
+		A6D72BD224E517F000EDBA98 /* Base58.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58.swift; sourceTree = "<group>"; };
+		A6D72BD424E517F000EDBA98 /* Pretty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pretty.swift; sourceTree = "<group>"; };
+		A6D72BD624E517F000EDBA98 /* BlockIdDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockIdDetails.swift; sourceTree = "<group>"; };
+		A6D72BD724E517F000EDBA98 /* eos_swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eos_swift.h; sourceTree = "<group>"; };
+		A6D72BD924E517F000EDBA98 /* uECC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uECC.h; sourceTree = "<group>"; };
+		A6D72BDA24E517F000EDBA98 /* asm_arm.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asm_arm.inc.h; sourceTree = "<group>"; };
+		A6D72BDB24E517F000EDBA98 /* uECC_vli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uECC_vli.h; sourceTree = "<group>"; };
+		A6D72BDC24E517F000EDBA98 /* platform-specific.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "platform-specific.inc.h"; sourceTree = "<group>"; };
+		A6D72BDD24E517F000EDBA98 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		A6D72BDF24E517F000EDBA98 /* asm_arm_mult_square_umaal.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asm_arm_mult_square_umaal.inc.h; sourceTree = "<group>"; };
+		A6D72BE024E517F000EDBA98 /* asm_avr_mult_square.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asm_avr_mult_square.inc.h; sourceTree = "<group>"; };
+		A6D72BE124E517F000EDBA98 /* asm_avr.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asm_avr.inc.h; sourceTree = "<group>"; };
+		A6D72BE224E517F000EDBA98 /* asm_arm_mult_square.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asm_arm_mult_square.inc.h; sourceTree = "<group>"; };
+		A6D72BE324E517F000EDBA98 /* curve-specific.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "curve-specific.inc.h"; sourceTree = "<group>"; };
+		A6D72BE424E517F000EDBA98 /* uECC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uECC.c; sourceTree = "<group>"; };
+		A6D72BE524E517F000EDBA98 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		A6D72BE824E517F000EDBA98 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		A6D72BE924E517F000EDBA98 /* RxHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxHttp.swift; sourceTree = "<group>"; };
+		A6D72BEA24E517F000EDBA98 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A6D72BEB24E517F000EDBA98 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		A6D72BEC24E517F000EDBA98 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		A6D72BED24E517F000EDBA98 /* HttpErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpErrorResponse.swift; sourceTree = "<group>"; };
+		A6D72BEF24E517F000EDBA98 /* DateDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateDecoder.swift; sourceTree = "<group>"; };
+		A6D72BF024E517F000EDBA98 /* HistoryApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryApi.swift; sourceTree = "<group>"; };
+		A6D72BF124E517F000EDBA98 /* ChainApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainApi.swift; sourceTree = "<group>"; };
+		A6D72BF424E517F000EDBA98 /* TransactionAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionAuthorization.swift; sourceTree = "<group>"; };
+		A6D72BF624E517F000EDBA98 /* TransactionActionTrace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionActionTrace.swift; sourceTree = "<group>"; };
+		A6D72BF724E517F000EDBA98 /* TransactionProcessed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionProcessed.swift; sourceTree = "<group>"; };
+		A6D72BF824E517F000EDBA98 /* TransactionComitted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionComitted.swift; sourceTree = "<group>"; };
+		A6D72BF924E517F000EDBA98 /* TransactionParentReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionParentReceipt.swift; sourceTree = "<group>"; };
+		A6D72BFA24E517F000EDBA98 /* TransactionAct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionAct.swift; sourceTree = "<group>"; };
+		A6D72BFB24E517F000EDBA98 /* TransactionActAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionActAuthorization.swift; sourceTree = "<group>"; };
+		A6D72BFC24E517F000EDBA98 /* TransactionReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionReceipt.swift; sourceTree = "<group>"; };
+		A6D72BFE24E517F000EDBA98 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		A6D72BFF24E517F000EDBA98 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		A6D72C0224E517F000EDBA98 /* Producer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producer.swift; sourceTree = "<group>"; };
+		A6D72C0324E517F000EDBA98 /* ProducerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProducerList.swift; sourceTree = "<group>"; };
+		A6D72C0524E517F000EDBA98 /* GetProducers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProducers.swift; sourceTree = "<group>"; };
+		A6D72C0824E517F000EDBA98 /* AbiStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiStruct.swift; sourceTree = "<group>"; };
+		A6D72C0924E517F000EDBA98 /* AbiBinargs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiBinargs.swift; sourceTree = "<group>"; };
+		A6D72C0A24E517F000EDBA98 /* AbiAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiAction.swift; sourceTree = "<group>"; };
+		A6D72C0B24E517F000EDBA98 /* AbiContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiContract.swift; sourceTree = "<group>"; };
+		A6D72C0C24E517F000EDBA98 /* AbiType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiType.swift; sourceTree = "<group>"; };
+		A6D72C0D24E517F000EDBA98 /* RawCodeForAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawCodeForAccount.swift; sourceTree = "<group>"; };
+		A6D72C0E24E517F000EDBA98 /* CodeForAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeForAccount.swift; sourceTree = "<group>"; };
+		A6D72C0F24E517F000EDBA98 /* AbiForAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiForAccount.swift; sourceTree = "<group>"; };
+		A6D72C1024E517F000EDBA98 /* BinaryHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryHex.swift; sourceTree = "<group>"; };
+		A6D72C1124E517F000EDBA98 /* ContractTableRows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractTableRows.swift; sourceTree = "<group>"; };
+		A6D72C1224E517F000EDBA98 /* AbiField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiField.swift; sourceTree = "<group>"; };
+		A6D72C1324E517F000EDBA98 /* AbiTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiTable.swift; sourceTree = "<group>"; };
+		A6D72C1524E517F000EDBA98 /* GetCodeByAccountName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCodeByAccountName.swift; sourceTree = "<group>"; };
+		A6D72C1624E517F000EDBA98 /* GetCurrencyBalance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrencyBalance.swift; sourceTree = "<group>"; };
+		A6D72C1724E517F000EDBA98 /* AbiJsonToBin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiJsonToBin.swift; sourceTree = "<group>"; };
+		A6D72C1824E517F000EDBA98 /* GetCurrencyStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrencyStats.swift; sourceTree = "<group>"; };
+		A6D72C1924E517F000EDBA98 /* AbiBinToJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbiBinToJson.swift; sourceTree = "<group>"; };
+		A6D72C1A24E517F000EDBA98 /* GetTableRows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTableRows.swift; sourceTree = "<group>"; };
+		A6D72C1B24E517F000EDBA98 /* ChainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainError.swift; sourceTree = "<group>"; };
+		A6D72C1D24E517F000EDBA98 /* GetRequiredKeysBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRequiredKeysBody.swift; sourceTree = "<group>"; };
+		A6D72C1E24E517F000EDBA98 /* PushTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransaction.swift; sourceTree = "<group>"; };
+		A6D72C1F24E517F000EDBA98 /* RequiredKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredKeys.swift; sourceTree = "<group>"; };
+		A6D72C2024E517F000EDBA98 /* ResponseBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseBody.swift; sourceTree = "<group>"; };
+		A6D72C2124E517F000EDBA98 /* RequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
+		A6D72C2224E517F000EDBA98 /* parsing_types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parsing_types.swift; sourceTree = "<group>"; };
+		A6D72C2324E517F000EDBA98 /* codable_type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = codable_type.swift; sourceTree = "<group>"; };
+		A6D72C2424E517F000EDBA98 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		A6D72C2624E517F000EDBA98 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		A6D72C2924E517F000EDBA98 /* HistoricAccountAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricAccountAction.swift; sourceTree = "<group>"; };
+		A6D72C2A24E517F000EDBA98 /* ExecutedTransactionParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutedTransactionParent.swift; sourceTree = "<group>"; };
+		A6D72C2B24E517F000EDBA98 /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		A6D72C2C24E517F000EDBA98 /* ExecutedTransactionReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutedTransactionReceipt.swift; sourceTree = "<group>"; };
+		A6D72C2D24E517F000EDBA98 /* ExecutedTransactionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutedTransactionAction.swift; sourceTree = "<group>"; };
+		A6D72C2E24E517F000EDBA98 /* HistoricAccountActionParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricAccountActionParent.swift; sourceTree = "<group>"; };
+		A6D72C2F24E517F000EDBA98 /* ExecutedTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutedTransaction.swift; sourceTree = "<group>"; };
+		A6D72C3024E517F000EDBA98 /* HistoricTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricTransaction.swift; sourceTree = "<group>"; };
+		A6D72C3224E517F000EDBA98 /* GetActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetActions.swift; sourceTree = "<group>"; };
+		A6D72C3324E517F000EDBA98 /* GetKeyAccounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetKeyAccounts.swift; sourceTree = "<group>"; };
+		A6D72C3424E517F000EDBA98 /* GetTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTransaction.swift; sourceTree = "<group>"; };
+		A6D72C3524E517F000EDBA98 /* GetControlledAccounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetControlledAccounts.swift; sourceTree = "<group>"; };
+		A6D72C3824E517F000EDBA98 /* SelfDelegatedBandwidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfDelegatedBandwidth.swift; sourceTree = "<group>"; };
+		A6D72C3924E517F000EDBA98 /* AccountPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountPermission.swift; sourceTree = "<group>"; };
+		A6D72C3A24E517F000EDBA98 /* AccountKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountKey.swift; sourceTree = "<group>"; };
+		A6D72C3B24E517F000EDBA98 /* AccountRequiredAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRequiredAuth.swift; sourceTree = "<group>"; };
+		A6D72C3C24E517F000EDBA98 /* RefundRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundRequest.swift; sourceTree = "<group>"; };
+		A6D72C3D24E517F000EDBA98 /* AccountAuthPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountAuthPermission.swift; sourceTree = "<group>"; };
+		A6D72C3E24E517F000EDBA98 /* ChainResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainResource.swift; sourceTree = "<group>"; };
+		A6D72C3F24E517F000EDBA98 /* VoterInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoterInfo.swift; sourceTree = "<group>"; };
+		A6D72C4024E517F000EDBA98 /* AccountAuthWait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountAuthWait.swift; sourceTree = "<group>"; };
+		A6D72C4124E517F000EDBA98 /* AccountResourceLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountResourceLimit.swift; sourceTree = "<group>"; };
+		A6D72C4224E517F000EDBA98 /* TotalResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalResources.swift; sourceTree = "<group>"; };
+		A6D72C4324E517F000EDBA98 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		A6D72C4424E517F000EDBA98 /* TransferFee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferFee.swift; sourceTree = "<group>"; };
+		A6D72C4524E517F000EDBA98 /* AccountAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountAuth.swift; sourceTree = "<group>"; };
+		A6D72C4724E517F000EDBA98 /* AccountName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountName.swift; sourceTree = "<group>"; };
+		A6D72C4824E517F000EDBA98 /* BlockHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockHeight.swift; sourceTree = "<group>"; };
+		A6D72C4924E517F000EDBA98 /* ChainErrorDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainErrorDetail.swift; sourceTree = "<group>"; };
+		A6D72C4A24E517F000EDBA98 /* ChainErrorItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainErrorItem.swift; sourceTree = "<group>"; };
+		A6D72C4D24E517F000EDBA98 /* BlockHeaderRootMerkle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockHeaderRootMerkle.swift; sourceTree = "<group>"; };
+		A6D72C4E24E517F000EDBA98 /* CycleSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleSummary.swift; sourceTree = "<group>"; };
+		A6D72C4F24E517F000EDBA98 /* BlockHeaderSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockHeaderSchedule.swift; sourceTree = "<group>"; };
+		A6D72C5024E517F000EDBA98 /* BlockHeaderStateHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockHeaderStateHeader.swift; sourceTree = "<group>"; };
+		A6D72C5124E517F000EDBA98 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		A6D72C5224E517F000EDBA98 /* CycleSummaryTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleSummaryTransaction.swift; sourceTree = "<group>"; };
+		A6D72C5324E517F000EDBA98 /* BlockHeaderProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockHeaderProducer.swift; sourceTree = "<group>"; };
+		A6D72C5424E517F000EDBA98 /* BlockHeaderState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockHeaderState.swift; sourceTree = "<group>"; };
+		A6D72C5524E517F000EDBA98 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		A6D72C5724E517F000EDBA98 /* BlockNumOrId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockNumOrId.swift; sourceTree = "<group>"; };
+		A6D72C5824E517F000EDBA98 /* primitive_type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = primitive_type.swift; sourceTree = "<group>"; };
+		A6D72C5924E517F000EDBA98 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D72D0924E51DA000EDBA98 /* UltrainSdk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UltrainSdk.swift; sourceTree = "<group>"; };
+		A6D72D0A24E51DA000EDBA98 /* UltrainSdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UltrainSdk.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +421,682 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				A6D72D0A24E51DA000EDBA98 /* UltrainSdk.m */,
+				A6D72D0924E51DA000EDBA98 /* UltrainSdk.swift */,
+				A6D72B6224E517F000EDBA98 /* ultrainswift */,
+				A6D728B924E5139700EDBA98 /* Mnemonic.swift */,
+				A6D728BB24E5139700EDBA98 /* PKCS5.swift */,
+				A6D729B524E5139700EDBA98 /* Wordlists.swift */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				A6D728B724E5139600EDBA98 /* UltrainSdk-Bridging-Header.h */,
+				A6D72BD824E517F000EDBA98 /* microecc */,
 			);
+			sourceTree = "<group>";
+		};
+		A6D72B6224E517F000EDBA98 /* ultrainswift */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B6324E517F000EDBA98 /* eos-chain-actions */,
+				A6D72BAD24E517F000EDBA98 /* eos-abi-writer */,
+				A6D72BC124E517F000EDBA98 /* eos-core */,
+				A6D72BD724E517F000EDBA98 /* eos_swift.h */,
+				A6D72BE624E517F000EDBA98 /* eos-http-rpc */,
+				A6D72C5824E517F000EDBA98 /* primitive_type.swift */,
+				A6D72C5924E517F000EDBA98 /* Info.plist */,
+			);
+			path = ultrainswift;
+			sourceTree = "<group>";
+		};
+		A6D72B6324E517F000EDBA98 /* eos-chain-actions */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B6424E517F000EDBA98 /* transaction */,
+				A6D72B9524E517F000EDBA98 /* TransactionContext.swift */,
+				A6D72B9624E517F000EDBA98 /* ChainTransaction.swift */,
+				A6D72B9724E517F000EDBA98 /* ChainResponse.swift */,
+				A6D72B9824E517F000EDBA98 /* query */,
+			);
+			path = "eos-chain-actions";
+			sourceTree = "<group>";
+		};
+		A6D72B6424E517F000EDBA98 /* transaction */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B6524E517F000EDBA98 /* vote */,
+				A6D72B6A24E517F000EDBA98 /* transfer */,
+				A6D72B6F24E517F000EDBA98 /* abi */,
+				A6D72B7424E517F000EDBA98 /* common */,
+				A6D72B7624E517F000EDBA98 /* account */,
+			);
+			path = transaction;
+			sourceTree = "<group>";
+		};
+		A6D72B6524E517F000EDBA98 /* vote */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B6624E517F000EDBA98 /* VoteChain.swift */,
+				A6D72B6724E517F000EDBA98 /* actions */,
+			);
+			path = vote;
+			sourceTree = "<group>";
+		};
+		A6D72B6724E517F000EDBA98 /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B6824E517F000EDBA98 /* VoteArgs.swift */,
+				A6D72B6924E517F000EDBA98 /* VoteBody.swift */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		A6D72B6A24E517F000EDBA98 /* transfer */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B6B24E517F000EDBA98 /* TransferChain.swift */,
+				A6D72B6C24E517F000EDBA98 /* actions */,
+			);
+			path = transfer;
+			sourceTree = "<group>";
+		};
+		A6D72B6C24E517F000EDBA98 /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B6D24E517F000EDBA98 /* TransferArgs.swift */,
+				A6D72B6E24E517F000EDBA98 /* TransferBody.swift */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		A6D72B6F24E517F000EDBA98 /* abi */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B7024E517F000EDBA98 /* SignedTransactionAbi.swift */,
+				A6D72B7124E517F000EDBA98 /* TransactionAuthorizationAbi.swift */,
+				A6D72B7224E517F000EDBA98 /* TransactionAbi.swift */,
+				A6D72B7324E517F000EDBA98 /* ActionAbi.swift */,
+			);
+			path = abi;
+			sourceTree = "<group>";
+		};
+		A6D72B7424E517F000EDBA98 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B7524E517F000EDBA98 /* CommonActionChain.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		A6D72B7624E517F000EDBA98 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B7724E517F000EDBA98 /* BuyRamChain.swift */,
+				A6D72B7824E517F000EDBA98 /* BuyRamBytesChain.swift */,
+				A6D72B7924E517F000EDBA98 /* UnDelegateBandwidth.swift */,
+				A6D72B7A24E517F000EDBA98 /* CreateAccountChain.swift */,
+				A6D72B7B24E517F000EDBA98 /* actions */,
+				A6D72B9224E517F000EDBA98 /* RefundChain.swift */,
+				A6D72B9324E517F000EDBA98 /* SellRamChain.swift */,
+				A6D72B9424E517F000EDBA98 /* DelegateBandwidthChain.swift */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		A6D72B7B24E517F000EDBA98 /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B7C24E517F000EDBA98 /* delegatebw */,
+				A6D72B7F24E517F000EDBA98 /* newaccount */,
+				A6D72B8424E517F000EDBA98 /* buyram */,
+				A6D72B8924E517F000EDBA98 /* sellram */,
+				A6D72B8C24E517F000EDBA98 /* undelegatebw */,
+				A6D72B8F24E517F000EDBA98 /* refund */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		A6D72B7C24E517F000EDBA98 /* delegatebw */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B7D24E517F000EDBA98 /* DelegateBandwidthBody.swift */,
+				A6D72B7E24E517F000EDBA98 /* DelegateBandwidthArgs.swift */,
+			);
+			path = delegatebw;
+			sourceTree = "<group>";
+		};
+		A6D72B7F24E517F000EDBA98 /* newaccount */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B8024E517F000EDBA98 /* NewAccountBody.swift */,
+				A6D72B8124E517F000EDBA98 /* AccountRequiredAuthAbi.swift */,
+				A6D72B8224E517F000EDBA98 /* AccountKeyAbi.swift */,
+				A6D72B8324E517F000EDBA98 /* NewAccountArgs.swift */,
+			);
+			path = newaccount;
+			sourceTree = "<group>";
+		};
+		A6D72B8424E517F000EDBA98 /* buyram */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B8524E517F000EDBA98 /* BuyRamBody.swift */,
+				A6D72B8624E517F000EDBA98 /* BuyRamBytesBody.swift */,
+				A6D72B8724E517F000EDBA98 /* BuyRamBytesArgs.swift */,
+				A6D72B8824E517F000EDBA98 /* BuyRamArgs.swift */,
+			);
+			path = buyram;
+			sourceTree = "<group>";
+		};
+		A6D72B8924E517F000EDBA98 /* sellram */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B8A24E517F000EDBA98 /* SellRamArgs.swift */,
+				A6D72B8B24E517F000EDBA98 /* SellRamBody.swift */,
+			);
+			path = sellram;
+			sourceTree = "<group>";
+		};
+		A6D72B8C24E517F000EDBA98 /* undelegatebw */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B8D24E517F000EDBA98 /* UnDelegateBandwidthBody.swift */,
+				A6D72B8E24E517F000EDBA98 /* UnDelegateBandwidthArgs.swift */,
+			);
+			path = undelegatebw;
+			sourceTree = "<group>";
+		};
+		A6D72B8F24E517F000EDBA98 /* refund */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B9024E517F000EDBA98 /* RefundBody.swift */,
+				A6D72B9124E517F000EDBA98 /* RefundArgs.swift */,
+			);
+			path = refund;
+			sourceTree = "<group>";
+		};
+		A6D72B9824E517F000EDBA98 /* query */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B9924E517F000EDBA98 /* bandwidth */,
+				A6D72B9C24E517F000EDBA98 /* producer */,
+				A6D72BA624E517F000EDBA98 /* proxy */,
+				A6D72BA924E517F000EDBA98 /* ramprice */,
+				A6D72BAB24E517F000EDBA98 /* accountname */,
+			);
+			path = query;
+			sourceTree = "<group>";
+		};
+		A6D72B9924E517F000EDBA98 /* bandwidth */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B9A24E517F000EDBA98 /* GetDelegatedBandwidth.swift */,
+				A6D72B9B24E517F000EDBA98 /* BandwidthJson.swift */,
+			);
+			path = bandwidth;
+			sourceTree = "<group>";
+		};
+		A6D72B9C24E517F000EDBA98 /* producer */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B9D24E517F000EDBA98 /* bpjson */,
+				A6D72BA424E517F000EDBA98 /* GetBlockProducers.swift */,
+				A6D72BA524E517F000EDBA98 /* BlockProducer.swift */,
+			);
+			path = producer;
+			sourceTree = "<group>";
+		};
+		A6D72B9D24E517F000EDBA98 /* bpjson */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72B9E24E517F000EDBA98 /* BpBranding.swift */,
+				A6D72B9F24E517F000EDBA98 /* BpNode.swift */,
+				A6D72BA024E517F000EDBA98 /* BpSocial.swift */,
+				A6D72BA124E517F000EDBA98 /* BpLocation.swift */,
+				A6D72BA224E517F000EDBA98 /* BpOrg.swift */,
+				A6D72BA324E517F000EDBA98 /* BpParent.swift */,
+			);
+			path = bpjson;
+			sourceTree = "<group>";
+		};
+		A6D72BA624E517F000EDBA98 /* proxy */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BA724E517F000EDBA98 /* GetRegProxyInfo.swift */,
+				A6D72BA824E517F000EDBA98 /* ProxyJson.swift */,
+			);
+			path = proxy;
+			sourceTree = "<group>";
+		};
+		A6D72BA924E517F000EDBA98 /* ramprice */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BAA24E517F000EDBA98 /* GetRamPrice.swift */,
+			);
+			path = ramprice;
+			sourceTree = "<group>";
+		};
+		A6D72BAB24E517F000EDBA98 /* accountname */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BAC24E517F000EDBA98 /* CheckAccountNameExists.swift */,
+			);
+			path = accountname;
+			sourceTree = "<group>";
+		};
+		A6D72BAD24E517F000EDBA98 /* eos-abi-writer */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BAE24E517F000EDBA98 /* types */,
+				A6D72BBE24E517F000EDBA98 /* AbiEncoder.swift */,
+				A6D72BBF24E517F000EDBA98 /* AbiEncodingContainer.swift */,
+				A6D72BC024E517F000EDBA98 /* regex.swift */,
+			);
+			path = "eos-abi-writer";
+			sourceTree = "<group>";
+		};
+		A6D72BAE24E517F000EDBA98 /* types */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BAF24E517F000EDBA98 /* AssetWriter.swift */,
+				A6D72BB024E517F000EDBA98 /* DataWriter.swift */,
+				A6D72BB124E517F000EDBA98 /* HexCollectionWriter.swift */,
+				A6D72BB224E517F000EDBA98 /* AbiTypeWriter.swift */,
+				A6D72BB324E517F000EDBA98 /* StringCollectionWriter.swift */,
+				A6D72BB424E517F000EDBA98 /* PublicKeyWriter.swift */,
+				A6D72BB524E517F000EDBA98 /* TimestampWriter.swift */,
+				A6D72BB624E517F000EDBA98 /* AccountNameWriter.swift */,
+				A6D72BB724E517F000EDBA98 /* AccountNameCollectionWriter.swift */,
+				A6D72BB824E517F000EDBA98 /* NameWriter.swift */,
+				A6D72BB924E517F000EDBA98 /* BlockNumWriter.swift */,
+				A6D72BBA24E517F000EDBA98 /* ActionWriter.swift */,
+				A6D72BBB24E517F000EDBA98 /* BlockPrefixWriter.swift */,
+				A6D72BBC24E517F000EDBA98 /* AccountActionWriter.swift */,
+				A6D72BBD24E517F000EDBA98 /* ChainIdWriter.swift */,
+			);
+			path = types;
+			sourceTree = "<group>";
+		};
+		A6D72BC124E517F000EDBA98 /* eos-core */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BC224E517F000EDBA98 /* crypto */,
+				A6D72BC924E517F000EDBA98 /* hex */,
+				A6D72BCB24E517F000EDBA98 /* hash */,
+				A6D72BD024E517F000EDBA98 /* encode */,
+				A6D72BD324E517F000EDBA98 /* utils */,
+				A6D72BD524E517F000EDBA98 /* block */,
+			);
+			path = "eos-core";
+			sourceTree = "<group>";
+		};
+		A6D72BC224E517F000EDBA98 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BC324E517F000EDBA98 /* signature */,
+				A6D72BC524E517F000EDBA98 /* EOSPublicKey.swift */,
+				A6D72BC624E517F000EDBA98 /* ECPublicKey.swift */,
+				A6D72BC724E517F000EDBA98 /* EOSPrivateKey.swift */,
+				A6D72BC824E517F000EDBA98 /* ECPrivateKey.swift */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		A6D72BC324E517F000EDBA98 /* signature */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BC424E517F000EDBA98 /* PrivateKeySigning.swift */,
+			);
+			path = signature;
+			sourceTree = "<group>";
+		};
+		A6D72BC924E517F000EDBA98 /* hex */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BCA24E517F000EDBA98 /* HexWriter.swift */,
+			);
+			path = hex;
+			sourceTree = "<group>";
+		};
+		A6D72BCB24E517F000EDBA98 /* hash */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BCC24E517F000EDBA98 /* Sha256.swift */,
+				A6D72BCD24E517F000EDBA98 /* RIPEMD160-Ext.swift */,
+				A6D72BCE24E517F000EDBA98 /* RIPEMD160.swift */,
+				A6D72BCF24E517F000EDBA98 /* RIPEMD160-HMAC.swift */,
+			);
+			path = hash;
+			sourceTree = "<group>";
+		};
+		A6D72BD024E517F000EDBA98 /* encode */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BD124E517F000EDBA98 /* Base58String.swift */,
+				A6D72BD224E517F000EDBA98 /* Base58.swift */,
+			);
+			path = encode;
+			sourceTree = "<group>";
+		};
+		A6D72BD324E517F000EDBA98 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BD424E517F000EDBA98 /* Pretty.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		A6D72BD524E517F000EDBA98 /* block */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BD624E517F000EDBA98 /* BlockIdDetails.swift */,
+			);
+			path = block;
+			sourceTree = "<group>";
+		};
+		A6D72BD824E517F000EDBA98 /* microecc */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BD924E517F000EDBA98 /* uECC.h */,
+				A6D72BDA24E517F000EDBA98 /* asm_arm.inc.h */,
+				A6D72BDB24E517F000EDBA98 /* uECC_vli.h */,
+				A6D72BDC24E517F000EDBA98 /* platform-specific.inc.h */,
+				A6D72BDD24E517F000EDBA98 /* types.h */,
+				A6D72BDE24E517F000EDBA98 /* include */,
+				A6D72BE324E517F000EDBA98 /* curve-specific.inc.h */,
+				A6D72BE424E517F000EDBA98 /* uECC.c */,
+				A6D72BE524E517F000EDBA98 /* module.modulemap */,
+			);
+			path = microecc;
+			sourceTree = "<group>";
+		};
+		A6D72BDE24E517F000EDBA98 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BDF24E517F000EDBA98 /* asm_arm_mult_square_umaal.inc.h */,
+				A6D72BE024E517F000EDBA98 /* asm_avr_mult_square.inc.h */,
+				A6D72BE124E517F000EDBA98 /* asm_avr.inc.h */,
+				A6D72BE224E517F000EDBA98 /* asm_arm_mult_square.inc.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A6D72BE624E517F000EDBA98 /* eos-http-rpc */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BE724E517F000EDBA98 /* networking */,
+				A6D72BF024E517F000EDBA98 /* HistoryApi.swift */,
+				A6D72BF124E517F000EDBA98 /* ChainApi.swift */,
+				A6D72BF224E517F000EDBA98 /* model */,
+			);
+			path = "eos-http-rpc";
+			sourceTree = "<group>";
+		};
+		A6D72BE724E517F000EDBA98 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BE824E517F000EDBA98 /* Connection.swift */,
+				A6D72BE924E517F000EDBA98 /* RxHttp.swift */,
+				A6D72BEA24E517F000EDBA98 /* Logger.swift */,
+				A6D72BEB24E517F000EDBA98 /* HttpRequest.swift */,
+				A6D72BEC24E517F000EDBA98 /* HttpResponse.swift */,
+				A6D72BED24E517F000EDBA98 /* HttpErrorResponse.swift */,
+				A6D72BEE24E517F000EDBA98 /* decoding */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		A6D72BEE24E517F000EDBA98 /* decoding */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BEF24E517F000EDBA98 /* DateDecoder.swift */,
+			);
+			path = decoding;
+			sourceTree = "<group>";
+		};
+		A6D72BF224E517F000EDBA98 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BF324E517F000EDBA98 /* transaction */,
+				A6D72C0024E517F000EDBA98 /* producer */,
+				A6D72C0624E517F000EDBA98 /* contract */,
+				A6D72C1B24E517F000EDBA98 /* ChainError.swift */,
+				A6D72C1C24E517F000EDBA98 /* signing */,
+				A6D72C2024E517F000EDBA98 /* ResponseBody.swift */,
+				A6D72C2124E517F000EDBA98 /* RequestBody.swift */,
+				A6D72C2224E517F000EDBA98 /* parsing_types.swift */,
+				A6D72C2324E517F000EDBA98 /* codable_type.swift */,
+				A6D72C2424E517F000EDBA98 /* Encodable.swift */,
+				A6D72C2524E517F000EDBA98 /* info */,
+				A6D72C2724E517F000EDBA98 /* history */,
+				A6D72C3624E517F000EDBA98 /* account */,
+				A6D72C4924E517F000EDBA98 /* ChainErrorDetail.swift */,
+				A6D72C4A24E517F000EDBA98 /* ChainErrorItem.swift */,
+				A6D72C4B24E517F000EDBA98 /* block */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A6D72BF324E517F000EDBA98 /* transaction */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BF424E517F000EDBA98 /* TransactionAuthorization.swift */,
+				A6D72BF524E517F000EDBA98 /* response */,
+				A6D72BFD24E517F000EDBA98 /* request */,
+			);
+			path = transaction;
+			sourceTree = "<group>";
+		};
+		A6D72BF524E517F000EDBA98 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BF624E517F000EDBA98 /* TransactionActionTrace.swift */,
+				A6D72BF724E517F000EDBA98 /* TransactionProcessed.swift */,
+				A6D72BF824E517F000EDBA98 /* TransactionComitted.swift */,
+				A6D72BF924E517F000EDBA98 /* TransactionParentReceipt.swift */,
+				A6D72BFA24E517F000EDBA98 /* TransactionAct.swift */,
+				A6D72BFB24E517F000EDBA98 /* TransactionActAuthorization.swift */,
+				A6D72BFC24E517F000EDBA98 /* TransactionReceipt.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		A6D72BFD24E517F000EDBA98 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72BFE24E517F000EDBA98 /* Transaction.swift */,
+				A6D72BFF24E517F000EDBA98 /* Action.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		A6D72C0024E517F000EDBA98 /* producer */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C0124E517F000EDBA98 /* response */,
+				A6D72C0424E517F000EDBA98 /* request */,
+			);
+			path = producer;
+			sourceTree = "<group>";
+		};
+		A6D72C0124E517F000EDBA98 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C0224E517F000EDBA98 /* Producer.swift */,
+				A6D72C0324E517F000EDBA98 /* ProducerList.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		A6D72C0424E517F000EDBA98 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C0524E517F000EDBA98 /* GetProducers.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		A6D72C0624E517F000EDBA98 /* contract */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C0724E517F000EDBA98 /* response */,
+				A6D72C1424E517F000EDBA98 /* request */,
+			);
+			path = contract;
+			sourceTree = "<group>";
+		};
+		A6D72C0724E517F000EDBA98 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C0824E517F000EDBA98 /* AbiStruct.swift */,
+				A6D72C0924E517F000EDBA98 /* AbiBinargs.swift */,
+				A6D72C0A24E517F000EDBA98 /* AbiAction.swift */,
+				A6D72C0B24E517F000EDBA98 /* AbiContract.swift */,
+				A6D72C0C24E517F000EDBA98 /* AbiType.swift */,
+				A6D72C0D24E517F000EDBA98 /* RawCodeForAccount.swift */,
+				A6D72C0E24E517F000EDBA98 /* CodeForAccount.swift */,
+				A6D72C0F24E517F000EDBA98 /* AbiForAccount.swift */,
+				A6D72C1024E517F000EDBA98 /* BinaryHex.swift */,
+				A6D72C1124E517F000EDBA98 /* ContractTableRows.swift */,
+				A6D72C1224E517F000EDBA98 /* AbiField.swift */,
+				A6D72C1324E517F000EDBA98 /* AbiTable.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		A6D72C1424E517F000EDBA98 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C1524E517F000EDBA98 /* GetCodeByAccountName.swift */,
+				A6D72C1624E517F000EDBA98 /* GetCurrencyBalance.swift */,
+				A6D72C1724E517F000EDBA98 /* AbiJsonToBin.swift */,
+				A6D72C1824E517F000EDBA98 /* GetCurrencyStats.swift */,
+				A6D72C1924E517F000EDBA98 /* AbiBinToJson.swift */,
+				A6D72C1A24E517F000EDBA98 /* GetTableRows.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		A6D72C1C24E517F000EDBA98 /* signing */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C1D24E517F000EDBA98 /* GetRequiredKeysBody.swift */,
+				A6D72C1E24E517F000EDBA98 /* PushTransaction.swift */,
+				A6D72C1F24E517F000EDBA98 /* RequiredKeys.swift */,
+			);
+			path = signing;
+			sourceTree = "<group>";
+		};
+		A6D72C2524E517F000EDBA98 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C2624E517F000EDBA98 /* Info.swift */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		A6D72C2724E517F000EDBA98 /* history */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C2824E517F000EDBA98 /* response */,
+				A6D72C3124E517F000EDBA98 /* request */,
+			);
+			path = history;
+			sourceTree = "<group>";
+		};
+		A6D72C2824E517F000EDBA98 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C2924E517F000EDBA98 /* HistoricAccountAction.swift */,
+				A6D72C2A24E517F000EDBA98 /* ExecutedTransactionParent.swift */,
+				A6D72C2B24E517F000EDBA98 /* Accounts.swift */,
+				A6D72C2C24E517F000EDBA98 /* ExecutedTransactionReceipt.swift */,
+				A6D72C2D24E517F000EDBA98 /* ExecutedTransactionAction.swift */,
+				A6D72C2E24E517F000EDBA98 /* HistoricAccountActionParent.swift */,
+				A6D72C2F24E517F000EDBA98 /* ExecutedTransaction.swift */,
+				A6D72C3024E517F000EDBA98 /* HistoricTransaction.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		A6D72C3124E517F000EDBA98 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C3224E517F000EDBA98 /* GetActions.swift */,
+				A6D72C3324E517F000EDBA98 /* GetKeyAccounts.swift */,
+				A6D72C3424E517F000EDBA98 /* GetTransaction.swift */,
+				A6D72C3524E517F000EDBA98 /* GetControlledAccounts.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		A6D72C3624E517F000EDBA98 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C3724E517F000EDBA98 /* response */,
+				A6D72C4624E517F000EDBA98 /* request */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		A6D72C3724E517F000EDBA98 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C3824E517F000EDBA98 /* SelfDelegatedBandwidth.swift */,
+				A6D72C3924E517F000EDBA98 /* AccountPermission.swift */,
+				A6D72C3A24E517F000EDBA98 /* AccountKey.swift */,
+				A6D72C3B24E517F000EDBA98 /* AccountRequiredAuth.swift */,
+				A6D72C3C24E517F000EDBA98 /* RefundRequest.swift */,
+				A6D72C3D24E517F000EDBA98 /* AccountAuthPermission.swift */,
+				A6D72C3E24E517F000EDBA98 /* ChainResource.swift */,
+				A6D72C3F24E517F000EDBA98 /* VoterInfo.swift */,
+				A6D72C4024E517F000EDBA98 /* AccountAuthWait.swift */,
+				A6D72C4124E517F000EDBA98 /* AccountResourceLimit.swift */,
+				A6D72C4224E517F000EDBA98 /* TotalResources.swift */,
+				A6D72C4324E517F000EDBA98 /* Account.swift */,
+				A6D72C4424E517F000EDBA98 /* TransferFee.swift */,
+				A6D72C4524E517F000EDBA98 /* AccountAuth.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		A6D72C4624E517F000EDBA98 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C4724E517F000EDBA98 /* AccountName.swift */,
+				A6D72C4824E517F000EDBA98 /* BlockHeight.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		A6D72C4B24E517F000EDBA98 /* block */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C4C24E517F000EDBA98 /* response */,
+				A6D72C5624E517F000EDBA98 /* request */,
+			);
+			path = block;
+			sourceTree = "<group>";
+		};
+		A6D72C4C24E517F000EDBA98 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C4D24E517F000EDBA98 /* BlockHeaderRootMerkle.swift */,
+				A6D72C4E24E517F000EDBA98 /* CycleSummary.swift */,
+				A6D72C4F24E517F000EDBA98 /* BlockHeaderSchedule.swift */,
+				A6D72C5024E517F000EDBA98 /* BlockHeaderStateHeader.swift */,
+				A6D72C5124E517F000EDBA98 /* Block.swift */,
+				A6D72C5224E517F000EDBA98 /* CycleSummaryTransaction.swift */,
+				A6D72C5324E517F000EDBA98 /* BlockHeaderProducer.swift */,
+				A6D72C5424E517F000EDBA98 /* BlockHeaderState.swift */,
+				A6D72C5524E517F000EDBA98 /* Region.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		A6D72C5624E517F000EDBA98 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				A6D72C5724E517F000EDBA98 /* BlockNumOrId.swift */,
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +1130,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -105,6 +1157,186 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D72CCF24E517F000EDBA98 /* AbiTable.swift in Sources */,
+				A6D72C7A24E517F000EDBA98 /* SellRamChain.swift in Sources */,
+				A6D72D0124E517F000EDBA98 /* BlockHeaderStateHeader.swift in Sources */,
+				A6D72C7324E517F000EDBA98 /* SellRamArgs.swift in Sources */,
+				A6D72C9524E517F000EDBA98 /* AccountNameCollectionWriter.swift in Sources */,
+				A6D72CF424E517F000EDBA98 /* AccountAuthWait.swift in Sources */,
+				A6D72CC924E517F000EDBA98 /* RawCodeForAccount.swift in Sources */,
+				A6D72CFA24E517F000EDBA98 /* AccountName.swift in Sources */,
+				A6D72CBB24E517F000EDBA98 /* TransactionParentReceipt.swift in Sources */,
+				A6D72D0824E517F000EDBA98 /* primitive_type.swift in Sources */,
+				A6D72C5B24E517F000EDBA98 /* VoteArgs.swift in Sources */,
+				A6D72C9124E517F000EDBA98 /* StringCollectionWriter.swift in Sources */,
+				A6D72CBA24E517F000EDBA98 /* TransactionComitted.swift in Sources */,
+				A6D72CD524E517F000EDBA98 /* GetTableRows.swift in Sources */,
+				A6D72C9E24E517F000EDBA98 /* regex.swift in Sources */,
+				A6D72C6024E517F000EDBA98 /* SignedTransactionAbi.swift in Sources */,
+				A6D72C7F24E517F000EDBA98 /* GetDelegatedBandwidth.swift in Sources */,
+				A6D72C9024E517F000EDBA98 /* AbiTypeWriter.swift in Sources */,
+				A6D72C8624E517F000EDBA98 /* BpParent.swift in Sources */,
+				A6D72CFC24E517F000EDBA98 /* ChainErrorDetail.swift in Sources */,
+				A6D72CF524E517F000EDBA98 /* AccountResourceLimit.swift in Sources */,
+				A6D72C9B24E517F000EDBA98 /* ChainIdWriter.swift in Sources */,
+				A6D72C7224E517F000EDBA98 /* BuyRamArgs.swift in Sources */,
+				A6D72A6924E5139700EDBA98 /* Wordlists.swift in Sources */,
+				A6D72C6E24E517F000EDBA98 /* NewAccountArgs.swift in Sources */,
+				A6D72CAD24E517F000EDBA98 /* uECC.c in Sources */,
+				A6D72CF624E517F000EDBA98 /* TotalResources.swift in Sources */,
+				A6D72CE824E517F000EDBA98 /* GetActions.swift in Sources */,
+				A6D72C8824E517F000EDBA98 /* BlockProducer.swift in Sources */,
+				A6D72C8924E517F000EDBA98 /* GetRegProxyInfo.swift in Sources */,
+				A6D72CD824E517F000EDBA98 /* PushTransaction.swift in Sources */,
+				A6D72CEF24E517F000EDBA98 /* AccountRequiredAuth.swift in Sources */,
+				A6D72CCC24E517F000EDBA98 /* BinaryHex.swift in Sources */,
+				A6D72C9A24E517F000EDBA98 /* AccountActionWriter.swift in Sources */,
+				A6D72C7D24E517F000EDBA98 /* ChainTransaction.swift in Sources */,
+				A6D72C8224E517F000EDBA98 /* BpNode.swift in Sources */,
+				A6D72D0C24E51DA000EDBA98 /* UltrainSdk.m in Sources */,
+				A6D72CD924E517F000EDBA98 /* RequiredKeys.swift in Sources */,
+				A6D72C9824E517F000EDBA98 /* ActionWriter.swift in Sources */,
+				A6D72C8024E517F000EDBA98 /* BandwidthJson.swift in Sources */,
+				A6D72D0B24E51DA000EDBA98 /* UltrainSdk.swift in Sources */,
+				A6D72CE324E517F000EDBA98 /* ExecutedTransactionReceipt.swift in Sources */,
+				A6D72CC324E517F000EDBA98 /* GetProducers.swift in Sources */,
+				A6D72CB724E517F000EDBA98 /* TransactionAuthorization.swift in Sources */,
+				A6D72CAC24E517F000EDBA98 /* BlockIdDetails.swift in Sources */,
+				A6D72CA224E517F000EDBA98 /* EOSPrivateKey.swift in Sources */,
+				A6D72C6B24E517F000EDBA98 /* NewAccountBody.swift in Sources */,
+				A6D72C7524E517F000EDBA98 /* UnDelegateBandwidthBody.swift in Sources */,
+				A6D72CBC24E517F000EDBA98 /* TransactionAct.swift in Sources */,
+				A6D72C6A24E517F000EDBA98 /* DelegateBandwidthArgs.swift in Sources */,
+				A6D72CC224E517F000EDBA98 /* ProducerList.swift in Sources */,
+				A6D72CD724E517F000EDBA98 /* GetRequiredKeysBody.swift in Sources */,
+				A6D72C8124E517F000EDBA98 /* BpBranding.swift in Sources */,
+				A6D72C6624E517F000EDBA98 /* BuyRamBytesChain.swift in Sources */,
+				A6D72CF224E517F000EDBA98 /* ChainResource.swift in Sources */,
+				A6D72C8724E517F000EDBA98 /* GetBlockProducers.swift in Sources */,
+				A6D72CE524E517F000EDBA98 /* HistoricAccountActionParent.swift in Sources */,
+				A6D72D0324E517F000EDBA98 /* CycleSummaryTransaction.swift in Sources */,
+				A6D72C7924E517F000EDBA98 /* RefundChain.swift in Sources */,
+				A6D72CD124E517F000EDBA98 /* GetCurrencyBalance.swift in Sources */,
+				A6D72CF124E517F000EDBA98 /* AccountAuthPermission.swift in Sources */,
+				A6D72CE124E517F000EDBA98 /* ExecutedTransactionParent.swift in Sources */,
+				A6D72CA324E517F000EDBA98 /* ECPrivateKey.swift in Sources */,
+				A6D72C9924E517F000EDBA98 /* BlockPrefixWriter.swift in Sources */,
+				A6D72CC024E517F000EDBA98 /* Action.swift in Sources */,
+				A6D72CFF24E517F000EDBA98 /* CycleSummary.swift in Sources */,
+				A6D72C7424E517F000EDBA98 /* SellRamBody.swift in Sources */,
+				A6D72CA824E517F000EDBA98 /* RIPEMD160-HMAC.swift in Sources */,
+				A6D72CC424E517F000EDBA98 /* AbiStruct.swift in Sources */,
+				A6D72C7824E517F000EDBA98 /* RefundArgs.swift in Sources */,
+				A6D72CC724E517F000EDBA98 /* AbiContract.swift in Sources */,
+				A6D72CAE24E517F000EDBA98 /* Connection.swift in Sources */,
+				A6D72C9F24E517F000EDBA98 /* PrivateKeySigning.swift in Sources */,
+				A6D72C6124E517F000EDBA98 /* TransactionAuthorizationAbi.swift in Sources */,
+				A6D72CEC24E517F000EDBA98 /* SelfDelegatedBandwidth.swift in Sources */,
+				A6D72CB524E517F000EDBA98 /* HistoryApi.swift in Sources */,
+				A6D72C9724E517F000EDBA98 /* BlockNumWriter.swift in Sources */,
+				A6D72CC524E517F000EDBA98 /* AbiBinargs.swift in Sources */,
+				A6D72C9D24E517F000EDBA98 /* AbiEncodingContainer.swift in Sources */,
+				A6D72CB224E517F000EDBA98 /* HttpResponse.swift in Sources */,
+				A6D72CB624E517F000EDBA98 /* ChainApi.swift in Sources */,
+				A6D72C7024E517F000EDBA98 /* BuyRamBytesBody.swift in Sources */,
+				A6D72C9324E517F000EDBA98 /* TimestampWriter.swift in Sources */,
+				A6D72CCB24E517F000EDBA98 /* AbiForAccount.swift in Sources */,
+				A6D72C8424E517F000EDBA98 /* BpLocation.swift in Sources */,
+				A6D72D0624E517F000EDBA98 /* Region.swift in Sources */,
+				A6D72C5F24E517F000EDBA98 /* TransferBody.swift in Sources */,
+				A6D72CDB24E517F000EDBA98 /* RequestBody.swift in Sources */,
+				A6D72CEB24E517F000EDBA98 /* GetControlledAccounts.swift in Sources */,
+				A6D72CB824E517F000EDBA98 /* TransactionActionTrace.swift in Sources */,
+				A6D72CE024E517F000EDBA98 /* HistoricAccountAction.swift in Sources */,
+				A6D72CFD24E517F000EDBA98 /* ChainErrorItem.swift in Sources */,
+				A6D72D0524E517F000EDBA98 /* BlockHeaderState.swift in Sources */,
+				A6D72C6924E517F000EDBA98 /* DelegateBandwidthBody.swift in Sources */,
+				A6D72CC124E517F000EDBA98 /* Producer.swift in Sources */,
+				A6D72CFB24E517F000EDBA98 /* BlockHeight.swift in Sources */,
+				A6D72CBE24E517F000EDBA98 /* TransactionReceipt.swift in Sources */,
+				A6D72C8324E517F000EDBA98 /* BpSocial.swift in Sources */,
+				A6D72C9C24E517F000EDBA98 /* AbiEncoder.swift in Sources */,
+				A6D72CAF24E517F000EDBA98 /* RxHttp.swift in Sources */,
+				A6D729B824E5139700EDBA98 /* PKCS5.swift in Sources */,
+				A6D72CA924E517F000EDBA98 /* Base58String.swift in Sources */,
+				A6D72CDC24E517F000EDBA98 /* parsing_types.swift in Sources */,
+				A6D72C6D24E517F000EDBA98 /* AccountKeyAbi.swift in Sources */,
+				A6D72CCD24E517F000EDBA98 /* ContractTableRows.swift in Sources */,
+				A6D72CCA24E517F000EDBA98 /* CodeForAccount.swift in Sources */,
+				A6D72C7E24E517F000EDBA98 /* ChainResponse.swift in Sources */,
+				A6D72CDA24E517F000EDBA98 /* ResponseBody.swift in Sources */,
+				A6D72CB024E517F000EDBA98 /* Logger.swift in Sources */,
+				A6D72D0224E517F000EDBA98 /* Block.swift in Sources */,
+				A6D72CE724E517F000EDBA98 /* HistoricTransaction.swift in Sources */,
+				A6D72C5C24E517F000EDBA98 /* VoteBody.swift in Sources */,
+				A6D72CA524E517F000EDBA98 /* Sha256.swift in Sources */,
+				A6D72CAB24E517F000EDBA98 /* Pretty.swift in Sources */,
+				A6D72CA024E517F000EDBA98 /* EOSPublicKey.swift in Sources */,
+				A6D72C8D24E517F000EDBA98 /* AssetWriter.swift in Sources */,
+				A6D72CDD24E517F000EDBA98 /* codable_type.swift in Sources */,
+				A6D72C8C24E517F000EDBA98 /* CheckAccountNameExists.swift in Sources */,
+				A6D72CA724E517F000EDBA98 /* RIPEMD160.swift in Sources */,
+				A6D72CB424E517F000EDBA98 /* DateDecoder.swift in Sources */,
+				A6D72C8B24E517F000EDBA98 /* GetRamPrice.swift in Sources */,
+				A6D72C6324E517F000EDBA98 /* ActionAbi.swift in Sources */,
+				A6D72CC824E517F000EDBA98 /* AbiType.swift in Sources */,
+				A6D72D0024E517F000EDBA98 /* BlockHeaderSchedule.swift in Sources */,
+				A6D72C7724E517F000EDBA98 /* RefundBody.swift in Sources */,
+				A6D72C6724E517F000EDBA98 /* UnDelegateBandwidth.swift in Sources */,
+				A6D72CBF24E517F000EDBA98 /* Transaction.swift in Sources */,
+				A6D72D0424E517F000EDBA98 /* BlockHeaderProducer.swift in Sources */,
+				A6D72C6224E517F000EDBA98 /* TransactionAbi.swift in Sources */,
+				A6D72C5D24E517F000EDBA98 /* TransferChain.swift in Sources */,
+				A6D72CA124E517F000EDBA98 /* ECPublicKey.swift in Sources */,
+				A6D72D0724E517F000EDBA98 /* BlockNumOrId.swift in Sources */,
+				A6D72CF324E517F000EDBA98 /* VoterInfo.swift in Sources */,
+				A6D72C9624E517F000EDBA98 /* NameWriter.swift in Sources */,
+				A6D72C8A24E517F000EDBA98 /* ProxyJson.swift in Sources */,
+				A6D72C7B24E517F000EDBA98 /* DelegateBandwidthChain.swift in Sources */,
+				A6D72CB924E517F000EDBA98 /* TransactionProcessed.swift in Sources */,
+				A6D72CB324E517F000EDBA98 /* HttpErrorResponse.swift in Sources */,
+				A6D72CCE24E517F000EDBA98 /* AbiField.swift in Sources */,
+				A6D72CAA24E517F000EDBA98 /* Base58.swift in Sources */,
+				A6D72CED24E517F000EDBA98 /* AccountPermission.swift in Sources */,
+				A6D72CE924E517F000EDBA98 /* GetKeyAccounts.swift in Sources */,
+				A6D72C7124E517F000EDBA98 /* BuyRamBytesArgs.swift in Sources */,
+				A6D72C6524E517F000EDBA98 /* BuyRamChain.swift in Sources */,
+				A6D72CBD24E517F000EDBA98 /* TransactionActAuthorization.swift in Sources */,
+				A6D72C9224E517F000EDBA98 /* PublicKeyWriter.swift in Sources */,
+				A6D72CDE24E517F000EDBA98 /* Encodable.swift in Sources */,
+				A6D72CDF24E517F000EDBA98 /* Info.swift in Sources */,
+				A6D72C6824E517F000EDBA98 /* CreateAccountChain.swift in Sources */,
+				A6D72C8E24E517F000EDBA98 /* DataWriter.swift in Sources */,
+				A6D72C6C24E517F000EDBA98 /* AccountRequiredAuthAbi.swift in Sources */,
+				A6D72CF024E517F000EDBA98 /* RefundRequest.swift in Sources */,
+				A6D72C6424E517F000EDBA98 /* CommonActionChain.swift in Sources */,
+				A6D72CD424E517F000EDBA98 /* AbiBinToJson.swift in Sources */,
+				A6D72C5E24E517F000EDBA98 /* TransferArgs.swift in Sources */,
+				A6D72CC624E517F000EDBA98 /* AbiAction.swift in Sources */,
+				A6D72C8F24E517F000EDBA98 /* HexCollectionWriter.swift in Sources */,
+				A6D72CE224E517F000EDBA98 /* Accounts.swift in Sources */,
+				A6D72CEA24E517F000EDBA98 /* GetTransaction.swift in Sources */,
+				A6D72C8524E517F000EDBA98 /* BpOrg.swift in Sources */,
+				A6D72C7624E517F000EDBA98 /* UnDelegateBandwidthArgs.swift in Sources */,
+				A6D72C6F24E517F000EDBA98 /* BuyRamBody.swift in Sources */,
+				A6D72CF724E517F000EDBA98 /* Account.swift in Sources */,
+				A6D72CF924E517F000EDBA98 /* AccountAuth.swift in Sources */,
+				A6D729B624E5139700EDBA98 /* Mnemonic.swift in Sources */,
+				A6D72CE424E517F000EDBA98 /* ExecutedTransactionAction.swift in Sources */,
+				A6D72CD324E517F000EDBA98 /* GetCurrencyStats.swift in Sources */,
+				A6D72CEE24E517F000EDBA98 /* AccountKey.swift in Sources */,
+				A6D72CA424E517F000EDBA98 /* HexWriter.swift in Sources */,
+				A6D72C9424E517F000EDBA98 /* AccountNameWriter.swift in Sources */,
+				A6D72C7C24E517F000EDBA98 /* TransactionContext.swift in Sources */,
+				A6D72CD224E517F000EDBA98 /* AbiJsonToBin.swift in Sources */,
+				A6D72CFE24E517F000EDBA98 /* BlockHeaderRootMerkle.swift in Sources */,
+				A6D72CA624E517F000EDBA98 /* RIPEMD160-Ext.swift in Sources */,
+				A6D72CD024E517F000EDBA98 /* GetCodeByAccountName.swift in Sources */,
+				A6D72C5A24E517F000EDBA98 /* VoteChain.swift in Sources */,
+				A6D72CD624E517F000EDBA98 /* ChainError.swift in Sources */,
+				A6D72CF824E517F000EDBA98 /* TransferFee.swift in Sources */,
+				A6D72CB124E517F000EDBA98 /* HttpRequest.swift in Sources */,
+				A6D72CE624E517F000EDBA98 /* ExecutedTransaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,32 +1457,41 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = UltrainSdk;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UltrainSdk-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = UltrainSdk;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UltrainSdk-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

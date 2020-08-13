@@ -1,7 +1,8 @@
 # OSX
 #
 .DS_Store
-
+Pods/
+*.lock
 # node.js
 #
 node_modules/

@@ -9,30 +9,170 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
-import UltrainSdk from 'react-native-ultrain-sdk';
+import {
+  Text,
+  Button,
+  SafeAreaView,
+  TouchableOpacity,
+  StyleSheet,
+  ScrollView,
+} from 'react-native';
+import {TxInfo, ECC, UChainEndpoints, UChain} from 'react-native-ultrain-sdk';
 
 export default class App extends Component<{}> {
   state = {
-    status: 'starting',
-    message: '--',
+    response: 'Empty',
   };
   componentDidMount() {
-    UltrainSdk.sampleMethod('Testing', 123, (message) => {
-      this.setState({
-        status: 'native callback received',
-        message,
-      });
-    });
+    // UltrainSdk.sampleMethod('Testing', 123, (message) => {
+    //   this.setState({
+    //     status: 'native callback received',
+    //     message,
+    //   });
+    // });
   }
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>☆UltrainSdk example☆</Text>
-        <Text style={styles.instructions}>STATUS: {this.state.status}</Text>
-        <Text style={styles.welcome}>☆NATIVE CALLBACK MESSAGE☆</Text>
-        <Text style={styles.instructions}>{this.state.message}</Text>
-      </View>
+      <SafeAreaView style={{flex: 1, flexDirection: 'column', marginTop: 30}}>
+        {/* <TouchableOpacity
+          onPress={async () => {
+            let keys = await ECC.generatePrivateKeyWithMnemonic();
+            this.setState({response: JSON.stringify(keys, undefined, 2)});
+          }}>
+          <Text>Generate Key Pair</Text>
+        </TouchableOpacity> */}
+        <Button
+          title={'Generate Key Pair'}
+          onPress={async () => {
+            let keys = await ECC.generatePrivateKeyWithMnemonic();
+            this.setState({response: JSON.stringify(keys, undefined, 2)});
+          }}
+        />
+
+        <Button
+          title={'Generate Key By Seeds'}
+          onPress={async () => {
+            let keys = await ECC.generatePrivateKeyByMnemonic(
+              'boy axis violin inherit lonely sound cost tenant banana oxygen motion pottery',
+            );
+            console.log('bySeeds: ', keys);
+            this.setState({response: JSON.stringify(keys, undefined, 2)});
+          }}
+        />
+
+        <Button
+          title={'Sign Transaction'}
+          onPress={async () => {
+            let tx = {
+              contract: 'yuanjing1',
+              action: 'getPointsRecord',
+              account: 'yuanjing1',
+              privateKey: '5KfjDYSn44QfW2s9xs8NxrCPMZUh1ZbZNJG7o6PUsLNg8VbCdV4',
+              permissionLevel: 'active',
+              params: {
+                user_id: '6C37204FF07F4AA1BA67DF43502045E3',
+              },
+            };
+            let signature = await ECC.signTx(UChainEndpoints.PioneerNet, tx);
+            console.log('Signature: ', signature);
+            this.setState({response: JSON.stringify(signature, undefined, 2)});
+          }}
+        />
+
+        <Button
+          title={'Get public key'}
+          onPress={async () => {
+            let pubkeys = await ECC.getPublicKey(
+              '5KfjDYSn44QfW2s9xs8NxrCPMZUh1ZbZNJG7o6PUsLNg8VbCdV4',
+            );
+            this.setState({response: pubkeys});
+          }}
+        />
+
+        <Button
+          title={'Show Chain Info'}
+          onPress={async () => {
+            let rsp = await UChain.getChainInfo(UChainEndpoints.MainNet);
+            this.setState({response: JSON.stringify(rsp, undefined, 2)});
+          }}
+        />
+
+        <Button
+          title={'Get Account fuck2death'}
+          onPress={async () => {
+            let rsp = await UChain.getAccount(
+              UChainEndpoints.MainNet,
+              'fuck2death',
+            );
+            this.setState({response: JSON.stringify(rsp, undefined, 2)});
+          }}
+        />
+
+        <Button
+          title={'Get Transfer Fee'}
+          onPress={async () => {
+            let chain = await UChain.getChainInfo(UChainEndpoints.MainNet);
+            let rsp = await UChain.getTransferFee(
+              UChainEndpoints.MainNet,
+              chain.head_block_num,
+            );
+
+            this.setState({response: JSON.stringify(rsp, undefined, 2)});
+          }}
+        />
+
+        <Button
+          title={'Get Currency Balance'}
+          onPress={async () => {
+            let rsp = await UChain.getCurrencyBalance(UChainEndpoints.MainNet, {
+              account: 'liangqin1',
+              contract: 'utrio.token',
+              symbol: 'UGAS',
+            });
+            this.setState({response: JSON.stringify(rsp, undefined, 2)});
+          }}
+        />
+
+        <Button
+          title={'Push Transaction'}
+          onPress={async () => {
+            let tx = {
+              contract: 'yuanjing1',
+              action: 'getPointsRecord',
+              account: 'yuanjing1',
+              privateKey: '5KfjDYSn44QfW2s9xs8NxrCPMZUh1ZbZNJG7o6PUsLNg8VbCdV4',
+              permissionLevel: 'active',
+              params: {
+                user_id: '6C37204FF07F4AA1BA67DF43502045E3',
+              },
+            };
+            let rsp = await UChain.pushTransaction(
+              UChainEndpoints.PioneerNet,
+              tx,
+            );
+            this.setState({response: JSON.stringify(rsp, undefined, 2)});
+          }}
+        />
+
+        <Button
+          title={'Transfer'}
+          onPress={async () => {
+            let tx = {
+              from: 'liangqin1',
+              to: 'leomessi5555',
+              quantity: '1.0000 UGAS',
+              memo: 'test transfer',
+              actor: 'liangqin1',
+              privateKey: '5KfjDYSn44QfW2s9xs8NxrCPMZUh1ZbZNJG7o6PUsLNg8VbCdV4',
+            };
+            let rsp = await UChain.transfer(UChainEndpoints.PioneerNet, tx);
+            this.setState({response: JSON.stringify(rsp, undefined, 2)});
+          }}
+        />
+        <ScrollView>
+          <Text style={{marginTop: 30, flex: 1}}>{this.state.response}</Text>
+        </ScrollView>
+      </SafeAreaView>
     );
   }
 }
