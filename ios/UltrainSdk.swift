@@ -93,6 +93,11 @@ class ChainApiModule: NSObject {
 
     _ = chainApi.abiJsonToBin(body: AbiJsonToBin(code: contract, action: action, args: paramsObj)).subscribe(
       onSuccess: { response in
+        if response.success == false {
+          reject("Error: ", "Get abi file failed with Status Code: \(response.statusCode). ", nil)
+            return
+        }
+        
           do {
             let binHex: AbiBinargs = response.body!
             let context = TransactionContext(authorizingAccountName: account, authorizingPrivateKey: try EOSPrivateKey(base58: privateKey), expirationDate: Date.defaultTransactionExpiry())
@@ -116,6 +121,11 @@ class ChainApiModule: NSObject {
   func getAccount(_ url: String, account: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejector reject: @escaping RCTPromiseRejectBlock) -> Void {
     let chainApi = ChainApiFactory.create(rootUrl:url)
     _ = chainApi.getAccount(body: AccountName(account_name: account)).subscribe(onSuccess: { response in
+      if response.success == false {
+        reject("Error: ", "Get account failed with Status Code: \(response.statusCode). ", nil)
+          return
+      }
+        
       do {
         let info: Account = response.body!
         let str = try successResolve(obj: info)
@@ -132,6 +142,11 @@ class ChainApiModule: NSObject {
   func getChainInfo(_ url: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejector reject: @escaping RCTPromiseRejectBlock) -> Void {
     let chainApi = ChainApiFactory.create(rootUrl:url)
     _ = chainApi.getInfo().subscribe(onSuccess: { response in
+      if response.success == false {
+        reject("Error: ", "Get chain info failed with Status Code: \(response.statusCode). ", nil)
+        return
+      }
+        
       do {
         let info: Info = response.body!
         let str = try successResolve(obj: info)
@@ -153,6 +168,11 @@ class ChainApiModule: NSObject {
     let symbol = params["symbol"] as! String;
     let gcb = GetCurrencyBalance(code: contract, account: account, symbol: symbol)
     _ = chainApi.getCurrencyBalance(body: gcb).subscribe(onSuccess: { response in
+      if response.success == false {
+        reject("Error: ", "Get currency balance failed with Status Code: \(response.statusCode). ", nil)
+          return
+      }
+        
       do {
         let balance: Array<String> = response.body!
         let str = try successResolve(obj: balance)
@@ -170,6 +190,11 @@ class ChainApiModule: NSObject {
     let chainApi = ChainApiFactory.create(rootUrl:url)
     let bh = BlockHeight(block_height: blockHeight)
     _ = chainApi.getTransferFee(body: bh).subscribe(onSuccess: { response in
+        if response.success == false {
+            reject("Error: ", "Get abi transfer fee failed with Status Code: \(response.statusCode).", nil)
+            return
+        }
+        
       do {
         let fee: TransferFee = response.body!
         let str = try successResolve(obj: fee)
@@ -195,17 +220,28 @@ class ChainApiModule: NSObject {
 
     _ = chainApi.abiJsonToBin(body: AbiJsonToBin(code: contract, action: action, args: paramsObj)).subscribe(
       onSuccess: { response in
+        
+        if response.success == false {
+            reject("Error: ", "Get abi of \(contract) failed. ", nil)
+            return
+        }
+        
           do {
             let binHex: AbiBinargs = response.body!
             let context = TransactionContext(authorizingAccountName: account, authorizingPrivateKey: try EOSPrivateKey(base58: privateKey), expirationDate: Date.defaultTransactionExpiry())
             _ = CommonActionChain(chainApi: chainApi).exec(contract: contract, action: action, hexData: binHex.binargs, pemissionLevel: pl, transactionContext: context).subscribe(
               onSuccess: { response in
-                do {
-                  let commit: TransactionCommitted = response.body!
-                  let str = try successResolve(obj: commit)
-                  resolve(str)
-                } catch {
-                  reject("Error: ", error.localizedDescription, error)
+                if response.success == false {
+                    let errmsg: String = response.errorBody!
+                    reject("Error: ", errmsg, nil);
+                } else {
+                    do {
+                      let commit: TransactionCommitted = response.body!
+                      let str = try successResolve(obj: commit)
+                      resolve(str)
+                    } catch {
+                      reject("Error: ", error.localizedDescription, error)
+                    }
                 }
             },
             onError: {error in
@@ -237,12 +273,18 @@ class ChainApiModule: NSObject {
 
     _ = TransferChain(chainApi: chainApi).transfer(contract: "utrio.token", args: args, transactionContext: context).subscribe(
       onSuccess: { response in
-        do {
-          let commit: TransactionCommitted = response.body!
-          let str = try successResolve(obj: commit)
-          resolve(str)
-        } catch {
-          reject("Error: ", error.localizedDescription, error)
+
+        if response.success == false {
+            let errmsg: String = response.errorBody!
+            reject("Error: ", errmsg, nil);
+        } else {
+            do {
+              let commit: TransactionCommitted = response.body!
+              let str = try successResolve(obj: commit)
+              resolve(str)
+            } catch {
+              reject("Error: ", error.localizedDescription, error)
+            }
         }
       },
       onError: { error in

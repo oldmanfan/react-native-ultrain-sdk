@@ -12,6 +12,10 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.security.SecureRandom;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import com.google.common.io.BaseEncoding;
+import org.json.JSONObject;
 
 import io.github.novacrypto.bip39.JavaxPBKDF2WithHmacSHA512;
 import io.github.novacrypto.bip39.MnemonicGenerator;
@@ -116,6 +120,18 @@ public class UltrainSdkModule extends ReactContextBaseJavaModule {
         });
     }
 
+    @ReactMethod
+    public void sha256(String message, Promise promise) {
+        try {
+            MessageDigest md = MessageDigest.getInstance( "SHA-256" );
+            md.update(message.getBytes());
+            byte[] digest = md.digest();
+            // Log.d(TAG, "digest of hello world : " + BaseEncoding.base16().lowerCase().encode(digest));
+            promise.resolve(BaseEncoding.base16().lowerCase().encode(digest));
+        } catch (Exception e) {
+            promise.reject(e);
+        }
+    }
 /**
  * 和链交易相关的函数
  */

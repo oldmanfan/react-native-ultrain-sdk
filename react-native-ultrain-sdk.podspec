@@ -5,7 +5,7 @@ package = JSON.parse(File.read(File.join(__dir__, "package.json")))
 Pod::Spec.new do |s|
   s.name         = "react-native-ultrain-sdk"
   s.ios.deployment_target  = '9.0'
-  s.swift_version          = '4.2'
+  s.swift_version          = '5.0'
   s.version      = package["version"]
   s.summary      = package["description"]
   s.description  = <<-DESC

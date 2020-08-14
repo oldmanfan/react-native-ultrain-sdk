@@ -17,7 +17,13 @@ import {
   StyleSheet,
   ScrollView,
 } from 'react-native';
-import {TxInfo, ECC, UChainEndpoints, UChain} from 'react-native-ultrain-sdk';
+import {
+  TxInfo,
+  ECC,
+  UChainEndpoints,
+  UChain,
+  Crypto,
+} from 'react-native-ultrain-sdk';
 
 export default class App extends Component<{}> {
   state = {
@@ -165,10 +171,22 @@ export default class App extends Component<{}> {
               actor: 'liangqin1',
               privateKey: '5KfjDYSn44QfW2s9xs8NxrCPMZUh1ZbZNJG7o6PUsLNg8VbCdV4',
             };
-            let rsp = await UChain.transfer(UChainEndpoints.PioneerNet, tx);
+            try {
+              let rsp = await UChain.transfer(UChainEndpoints.PioneerNet, tx);
+              this.setState({response: JSON.stringify(rsp, undefined, 2)});
+            } catch (e) {
+              console.log('transfer failed: ', e.message);
+            }
+          }}
+        />
+        <Button
+          title={'sha256("hello world")'}
+          onPress={async () => {
+            let rsp = await Crypto.sha256('hello world');
             this.setState({response: JSON.stringify(rsp, undefined, 2)});
           }}
         />
+
         <ScrollView>
           <Text style={{marginTop: 30, flex: 1}}>{this.state.response}</Text>
         </ScrollView>
