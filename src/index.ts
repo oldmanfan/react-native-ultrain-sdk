@@ -143,7 +143,7 @@ export type PushTxResult = string;
 type RpcResult = {
   isSuccess: boolean;
   message: string;
-  data: any;
+  data: string;
 };
 
 function parseRpcResult(rsp: string) {
@@ -152,7 +152,7 @@ function parseRpcResult(rsp: string) {
     if (obj.isSuccess === true) {
       return obj.data;
     } else {
-      throw new Error(obj.message);
+      throw new Error(obj.message + ' : ' + obj.data);
     }
   } catch (e) {
     throw e;
